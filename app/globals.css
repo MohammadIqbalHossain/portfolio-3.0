@@ -29,3 +29,41 @@ body {
 .center-item {
   @apply flex justify-center items-center;
 }
+
+/* Tooltip styles */
+
+.c-tooltip {
+  @apply s-tooltip i-hover-parent a-fade s-place-bottom;
+}
+
+.s-tooltip {
+  @apply p-2 rounded-md mx-auto inset-x-0 inline w-max bg-[#2E2E2E] leading-tight capitalize text-[14px];
+}
+
+.s-tooltip::before {
+  @apply absolute block w-0 h-0;
+  @apply inset-x-0 mx-auto;
+  content: "";
+  border: 0.5em solid transparent;
+}
+
+.s-place-bottom {
+  @apply absolute top-full bottom-auto my-0;
+}
+
+.a-fade {
+  opacity: 0;
+  pointer-events: none;
+  @apply transition duration-1000;
+}
+
+.s-place-bottom::before {
+  top: auto;
+  bottom: 100%;
+  border-color: transparent;
+}
+
+*:hover > .i-hover-parent {
+  opacity: 1;
+  pointer-events: auto;
+}
