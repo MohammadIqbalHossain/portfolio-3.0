@@ -13,9 +13,9 @@ export interface TooltipProps {
   clasName?: string;
 }
 
-export interface navbarDataType {
+export interface iconDataType {
   content: string;
-  placement: "right";
+  placement?: "bottom" | "right";
   href: string;
   svg: ReactNode;
   count?: string;
