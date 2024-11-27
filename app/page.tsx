@@ -1,4 +1,5 @@
 // import Image from "next/image";
+import { Navbar } from "./components/navbar";
 import { Button } from "./ui/button";
 import { githubSVG, instagramSVG, xSVG } from "./ui/svgs";
 import { Tag } from "./ui/tag";
@@ -9,9 +10,16 @@ export default function Home() {
     <main className="w-4/12">
       <Button>View full</Button>
       <Tag>process</Tag>
-      <Tooltip content={"x.com"}>{xSVG}</Tooltip>
-      <Tooltip content={"GitHub"}>{githubSVG}</Tooltip>
-      <Tooltip content={"Instagram"}>{instagramSVG}</Tooltip>
+      <Tooltip content={"x.com"} placement="bottom">
+        {xSVG}
+      </Tooltip>
+      <Tooltip content={"GitHub"} placement="bottom">
+        {githubSVG}
+      </Tooltip>
+      <Tooltip content={"Instagram"} placement="bottom">
+        {instagramSVG}
+      </Tooltip>
+      <Navbar />
     </main>
   );
 }

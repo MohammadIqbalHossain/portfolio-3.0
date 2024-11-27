@@ -33,7 +33,7 @@ body {
 /* Tooltip styles */
 
 .c-tooltip {
-  @apply s-tooltip i-hover-parent a-fade s-place-bottom;
+  @apply s-tooltip i-hover-parent a-fade;
 }
 
 .s-tooltip {
@@ -49,6 +49,20 @@ body {
 
 .s-place-bottom {
   @apply absolute top-full bottom-auto my-0;
+}
+
+.s-place-right {
+  @apply absolute left-full top-1/2 -translate-y-1/2 ml-2;
+}
+
+.s-place-right::before {
+  @apply absolute block w-0 h-0;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 0.5em;
+  border-color: transparent;
+  border-left-color: #2e2e2e;
 }
 
 .a-fade {

@@ -1,15 +1,19 @@
-import { ButtonProps } from "../lib/definations";
+import { TooltipProps } from "../lib/definations";
 import { inter } from "./font";
+import clsx from "clsx";
 
-export function Tooltip({ children, content }: ButtonProps) {
+export function Tooltip({ children, content, placement }: TooltipProps) {
   return (
-    <li className="relative center-item list-none my-2">
+    <div className="relative center-item list-none my-2">
       <button className="rounded">{children}</button>
       <div
-        className={`${inter.className} z-10 c-tooltip rounded-none text-[14px]`}
+        className={clsx(`${inter.className} z-10 c-tooltip rounded-none mx-4`, {
+          "s-place-bottom": placement === "bottom",
+          "s-place-right": placement === "right",
+        })}
       >
         {content}
       </div>
-    </li>
+    </div>
   );
 }
