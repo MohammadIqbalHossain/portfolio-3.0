@@ -3,8 +3,8 @@ export const xSVG = (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="30"
-    height="30"
+    width="22px"
+    height="22px"
     viewBox="0 0 48 48"
   >
     <polygon fill="#707070" points="41,6 9.929,42 6.215,42 37.287,6"></polygon>
@@ -46,8 +46,8 @@ export const instagramSVG = (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width="30"
-    height="30"
+    width="22px"
+    height="22px"
     viewBox="0 0 24 24"
   >
     <path
@@ -74,8 +74,8 @@ export const arrowSvg = (
 
 export const homeSVG = (
   <svg
-    width="30"
-    height="30"
+    width="22px"
+    height="22px"
     viewBox="0 0 24.00 24.00"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -102,8 +102,8 @@ export const homeSVG = (
 
 export const workSVG = (
   <svg
-    width="32px"
-    height="32px"
+    width="22px"
+    height="22px"
     viewBox="0 0 32 32"
     id="icon"
     xmlns="http://www.w3.org/2000/svg"
@@ -128,8 +128,8 @@ export const workSVG = (
 
 export const writingSVG = (
   <svg
-    width="32px"
-    height="32px"
+    width="22px"
+    height="22px"
     viewBox="0 0 512 512"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -149,8 +149,8 @@ export const storeSVG = (
     viewBox="0 0 24 24"
     fill="transparent"
     xmlns="http://www.w3.org/2000/svg"
-    width={"32px"}
-    height={"32px"}
+    width="22px"
+    height="22px"
     strokeWidth={0.8}
   >
     <g id="SVGRepo_bgCarrier" />
@@ -166,8 +166,8 @@ export const storeSVG = (
 
 export const stackSVG = (
   <svg
-    width="32px"
-    height="32px"
+    width="22px"
+    height="22px"
     viewBox="0 0 16 16"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -190,8 +190,8 @@ export const stackSVG = (
 
 export const aboutSVG = (
   <svg
-    width="32px"
-    height="32px"
+    width="22px"
+    height="22px"
     viewBox="0 0 24 24"
     fill="transparent"
     xmlns="http://www.w3.org/2000/svg"
@@ -213,8 +213,8 @@ export const aboutSVG = (
 
 export const contactSVG = (
   <svg
-    width="32px"
-    height="32px"
+    width="22px"
+    height="22px"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

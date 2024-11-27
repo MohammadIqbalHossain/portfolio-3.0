@@ -2,7 +2,7 @@ import { TooltipProps } from "../lib/definations";
 import { inter } from "./font";
 import clsx from "clsx";
 
-export function Tooltip({ children, content, placement }: TooltipProps) {
+export function Tooltip({ children, content, placement, count }: TooltipProps) {
   return (
     <div className="relative center-item list-none my-2">
       <button className="rounded">{children}</button>
@@ -18,7 +18,7 @@ export function Tooltip({ children, content, placement }: TooltipProps) {
         {content}{" "}
         {placement === "right" ? (
           <span className="relative px-1.5 py-[-0.5] rounded-sm drop-shadow-2xl leading-tight text-[12px] shadow-2xl bg-[#505050]  text-center">
-            1
+            {count}
           </span>
         ) : (
           ""
