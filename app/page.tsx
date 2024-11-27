@@ -1,5 +1,3 @@
-// import Image from "next/image";
-import { Navbar } from "./components/navbar";
 import { Button } from "./ui/button";
 import { githubSVG, instagramSVG, xSVG } from "./ui/svgs";
 import { Tag } from "./ui/tag";
@@ -19,7 +17,6 @@ export default function Home() {
       <Tooltip content={"Instagram"} placement="bottom">
         {instagramSVG}
       </Tooltip>
-      <Navbar />
     </main>
   );
 }

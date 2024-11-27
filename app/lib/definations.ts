@@ -10,6 +10,7 @@ export interface TooltipProps {
   content: string;
   placement?: "bottom" | "right";
   count?: string;
+  clasName?: string;
 }
 
 export interface navbarDataType {

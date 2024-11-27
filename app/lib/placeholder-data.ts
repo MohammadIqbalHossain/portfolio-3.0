@@ -14,7 +14,7 @@ export const navbarData: navbarDataType[] = [
   {
     content: "work",
     placement: "right",
-    href: "/work",
+    href: "/works",
     svg: workSVG,
     count: "2",
   },
