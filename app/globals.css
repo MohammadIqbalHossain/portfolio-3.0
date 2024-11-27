@@ -62,7 +62,6 @@ body {
   transform: translateY(-50%);
   border-width: 0.5em;
   border-color: transparent;
-  border-left-color: #2e2e2e;
 }
 
 .a-fade {
