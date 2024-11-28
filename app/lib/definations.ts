@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
+  svg?: React.ReactNode;
 }
 
 export interface TooltipProps {

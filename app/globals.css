@@ -5,6 +5,17 @@
 :root {
   --background: #ffffff;
   --foreground: #232323;
+
+  --bg-theme: #232323;
+
+  --avt-primary: #ececec;
+  --avt-text-color: #eaeaea;
+  --avt-text-secondary: #707070;
+  --avt--section-color: #979797;
+  --avt-dark-secondary: #848484;
+  --avt-heading-secondary: #a0a0a0;
+
+  --text-font-size: 15px;
 }
 
 @media (prefers-color-scheme: dark) {

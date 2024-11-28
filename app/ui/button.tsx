@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { ButtonProps } from "../lib/definations";
 import { arrowSvg } from "./svgs";
 
-export function Button({ children, className, ...rest }: ButtonProps) {
+export function Button({ children, className, svg, ...rest }: ButtonProps) {
   return (
     <button
       {...rest}
@@ -12,7 +12,7 @@ export function Button({ children, className, ...rest }: ButtonProps) {
       )}
     >
       {children}
-      {arrowSvg}
+      {children === "view all" ? arrowSvg : svg}
     </button>
   );
 }

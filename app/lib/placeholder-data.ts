@@ -10,6 +10,8 @@ import {
   githubSVG,
   instagramSVG,
   xSVG,
+  threadsSVG,
+  facebookSVG,
 } from "../ui/svgs";
 
 export const navbarData: iconDataType[] = [
@@ -60,7 +62,8 @@ export const navbarData: iconDataType[] = [
 
 export const socialLinkdata: iconDataType[] = [
   { content: "x.com", placement: "bottom", href: "/", svg: xSVG },
-  { content: "Threads", placement: "bottom", href: "/", svg: githubSVG },
+  { content: "Threads", placement: "bottom", href: "/", svg: threadsSVG },
   { content: "github", placement: "bottom", href: "/", svg: githubSVG },
   { content: "instagram", placement: "bottom", href: "/", svg: instagramSVG },
+  { content: "facebook", placement: "bottom", href: "/", svg: facebookSVG },
 ];

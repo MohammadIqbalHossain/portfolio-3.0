@@ -24,7 +24,8 @@ export function Navbar() {
             <li
               key={index}
               className={`relative my-1 transition duration-500 ${
-                isActive && "border-b-[0.5px] border-[#707070] py-0"
+                isActive &&
+                "border-b-[0.5px] border-[--avt-text-secondary] py-0"
               }`}
             >
               <Tooltip
