@@ -5,7 +5,7 @@ export function Tag({ className, children }: ButtonProps) {
   return (
     <span
       className={clsx(
-        "p-1 uppercase text-[#A0A0A0] text-[12px] border-[1px] border-[#525252] rounded-md",
+        "rounded-md border border-[#525252] p-1 text-[12px] uppercase text-[#A0A0A0]",
         className
       )}
     >

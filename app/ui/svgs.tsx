@@ -130,13 +130,67 @@ export const arrowSvg = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 32 32"
     fill="#676767"
-    className="h-4 w-5 ml-4"
+    className="ml-4 h-4 w-5"
     strokeWidth="2"
   >
     <path
       d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z"
       data-name="3-Arrow Right"
     />
+  </svg>
+);
+
+export const copySVG = (
+  <svg
+    width={22}
+    height={22}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="#707070"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="M9 15H5C3.89543 15 3 14.1046 3 13V5C3 3.89543 3.89543 3 5 3H13C14.1046 3 15 3.89543 15 5V9M11 21H19C20.1046 21 21 20.1046 21 19V11C21 9.89543 20.1046 9 19 9H11C9.89543 9 9 9.89543 9 11V19C9 20.1046 9.89543 21 11 21Z"
+        stroke="#707070"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </svg>
+);
+
+export const copiedTickSVG = (
+  <svg
+    width="22px"
+    height="22px"
+    viewBox="0 -0.5 25 25"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="#707070"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth={0} />
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="M5.5 12.5L10.167 17L19.5 8"
+        stroke="#707070"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
   </svg>
 );
 

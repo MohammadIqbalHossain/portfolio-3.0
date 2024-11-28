@@ -7,7 +7,8 @@ import Link from "next/link";
 import { socialLinkdata } from "./lib/placeholder-data";
 import { dmMono } from "./ui/font";
 import { Button } from "./ui/button";
-import { githubSVG } from "./ui/svgs";
+import { contactSVG } from "./ui/svgs";
+import { CopyToClipboard } from "./components/copyToClipboard";
 
 export default function Home() {
   // Neccessary code for formatting current time that is used in home page.
@@ -19,10 +20,10 @@ export default function Home() {
     .padStart(2, "0")}`;
 
   return (
-    <main className=" w-full md:w-8/12 lg:w-5/12 lg:my-10">
+    <main className=" w-full md:w-8/12 lg:my-10 lg:w-5/12">
       <div className="text-center">
         <span
-          className={`${dmMono.className} text-[--avt-text-secondary] leading-0 text-[12px] overflow-hidden`}
+          className={`${dmMono.className} overflow-hidden text-[12px] text-[--avt-text-secondary]`}
         >
           {formattedTime}
         </span>
@@ -40,12 +41,12 @@ export default function Home() {
           <h2 className="text-xl text-[--avt-heading-secondary]">
             Front-end Developer at Nextlent
           </h2>
-          <h4 className="text-[--avt-heading-secondary] text-md">
+          <h4 className="text-sm text-[--avt-heading-secondary]">
             Available for new opportunities
           </h4>
         </div>
 
-        <div className="center-item gap-5 my-4 flex-grow">
+        <div className="center-item my-4 grow gap-5">
           {socialLinkdata.map((elemnet, index) => (
             <Tooltip
               key={index}
@@ -57,12 +58,17 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="flex items-center justify-center gap-4 mx-5 lg:mx-10 flex-wrap lg:flex-nowrap">
-          <Button svg={githubSVG} className="bg-white text-black">
-            Copy Email
+        <div className="mx-5 flex flex-wrap items-center justify-center gap-4 md:mx-10 md:flex-nowrap lg:mx-10 lg:flex-nowrap">
+          <Button
+            svg={contactSVG}
+            className="gap-2 bg-[--foreground] text-black hover:bg-slate-200"
+          >
+            Contact me
           </Button>
           <p>or</p>
-          <Button>Copy Email</Button>
+          <Button>
+            <CopyToClipboard />
+          </Button>
         </div>
       </div>
     </main>

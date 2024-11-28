@@ -15,8 +15,8 @@ export function Navbar() {
   }, [pathname]);
 
   return (
-    <nav className="lg:w-auto lg:h-full lg:border-r lg:border-[#343434] lg:fixed lg:left-0 lg:top-0 lg:flex lg:items-center bg-[#232323] w-full h-16 fixed bottom-0 z-50 ">
-      <ul className="lg:flex lg:flex-col lg:justify-center lg:gap-2 lg:items-center lg:px-6 flex justify-between items-center w-full px-4 border-t border-[#343434] lg:border-none">
+    <nav className="fixed bottom-0 z-50 h-16 w-full bg-[#232323] lg:fixed lg:left-0 lg:top-0 lg:flex lg:h-full lg:w-auto lg:items-center lg:border-r lg:border-[#343434] ">
+      <ul className="flex w-full items-center justify-between border-t border-[#343434] px-4 lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-2 lg:border-none lg:px-6">
         {navbarData.map((element, index) => {
           const isActive = currentPath === element.href;
 

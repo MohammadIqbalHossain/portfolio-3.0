@@ -1,23 +1,20 @@
 import { TooltipProps } from "../lib/definations";
 import { inter } from "./font";
-import clsx from "clsx";
 
 export function Tooltip({ children, content, placement, count }: TooltipProps) {
   return (
-    <div className="relative center-item list-none my-2">
+    <div className="center-item relative my-2 list-none">
       <button className="rounded">{children}</button>
       <div
-        className={clsx(
-          `${inter.className} z-10 c-tooltip rounded-none mx-4 center-item`,
-          {
-            "s-place-bottom": placement === "bottom",
-            "s-place-right": placement === "right",
-          }
-        )}
+        className={`${
+          inter.className
+        } c-tooltip center-item z-10 mx-4 rounded-none ${
+          placement === "bottom" && "s-place-bottom"
+        } ${placement === "right" && "s-place-right"}`}
       >
         {content}{" "}
         {placement === "right" ? (
-          <span className="relative px-1.5 py-[-0.5] rounded-sm drop-shadow-2xl leading-tight text-[12px] shadow-2xl bg-[#505050]  text-center">
+          <span className="relative rounded-sm bg-[#505050] px-1.5 py-[-0.5] text-center text-[12px] leading-tight shadow-2xl  drop-shadow-2xl">
             {count}
           </span>
         ) : (
