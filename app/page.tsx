@@ -2,10 +2,11 @@ import { IntroCard } from "./components/Home/introCard";
 
 import { SectionTitle } from "./ui/sectionTitle";
 import { Work } from "./components/Home/work";
+import { WritingCard } from "./components/Home/writingCard";
 
 export default function Home() {
   return (
-    <main className="w-full md:w-8/12 lg:my-10 lg:w-6/12">
+    <main className="my-20 w-full md:w-8/12 lg:my-10 lg:w-6/12">
       <IntroCard />
 
       {/* about Information   */}
@@ -41,6 +42,17 @@ export default function Home() {
         </div>
         <div className="p-4 text-[15px] lg:p-0">
           <Work />
+        </div>
+      </div>
+
+      {/* writing Card */}
+      {/*TODO: I've to work on gap property later. Why gap is taking some extra spaces in this perticular section? and also when adding some padding in the card it's mismatches alignment with section name and section content in the desktop version.  */}
+      <div className="mt-10 flex items-start">
+        <div className="mt-3 hidden h-full w-2/12 lg:block">
+          <SectionTitle>Writing</SectionTitle>
+        </div>
+        <div className="w-full p-4 text-[15px] lg:p-0">
+          <WritingCard></WritingCard>
         </div>
       </div>
     </main>

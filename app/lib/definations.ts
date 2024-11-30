@@ -21,3 +21,10 @@ export interface iconDataType {
   svg: ReactNode;
   count?: string;
 }
+
+export interface writingDataProps {
+  date: string;
+  title: string;
+  tag?: string;
+  blog: string;
+}

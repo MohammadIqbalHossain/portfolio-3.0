@@ -1,4 +1,4 @@
-import { iconDataType } from "./definations";
+import { iconDataType, writingDataProps } from "./definations";
 import {
   aboutSVG,
   contactSVG,
@@ -66,4 +66,31 @@ export const socialLinkdata: iconDataType[] = [
   { content: "github", placement: "bottom", href: "/", svg: githubSVG },
   { content: "instagram", placement: "bottom", href: "/", svg: instagramSVG },
   { content: "facebook", placement: "bottom", href: "/", svg: facebookSVG },
+];
+
+// Writing sections data.
+export const wrtitingData: writingDataProps[] = [
+  {
+    date: "01/01/2000",
+    title:
+      "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
+    tag: "process",
+    blog: "The rise of blockchain technology has revolutionized various industries, and one sector that is greatly impacted is the world of design. From creating user-friendly interfaces for cryptocurrency wallets to designing captivating NFT marketplaces, designers have a unique role to play in the crypto industry. However, along with the opportunities, they also face distinctive challenges. In this blog post, we will explore the exciting possibilities and obstacles that designers encounter in the realm of blockchain.",
+  },
+
+  {
+    date: "01/01/2000",
+    title:
+      "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
+    tag: "crypto",
+    blog: "The rise of blockchain technology has revolutionized various industries, and one sector that is greatly impacted is the world of design. From creating user-friendly interfaces for cryptocurrency wallets to designing captivating NFT marketplaces, designers have a unique role to play in the crypto industry. However, along with the opportunities, they also face distinctive challenges. In this blog post, we will explore the exciting possibilities and obstacles that designers encounter in the realm of blockchain.",
+  },
+
+  {
+    date: "01/01/2000",
+    title:
+      "Blockchain and Design: Opportunities and Challenges for Designers in the Crypto Industry",
+    tag: "AI",
+    blog: "The rise of blockchain technology has revolutionized various industries, and one sector that is greatly impacted is the world of design. From creating user-friendly interfaces for cryptocurrency wallets to designing captivating NFT marketplaces, designers have a unique role to play in the crypto industry. However, along with the opportunities, they also face distinctive challenges. In this blog post, we will explore the exciting possibilities and obstacles that designers encounter in the realm of blockchain.",
+  },
 ];

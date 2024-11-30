@@ -17,9 +17,9 @@ export function Work() {
       {workSectionData.map((element, index) => (
         <div
           key={index}
-          className="group relative my-5 max-w-full cursor-pointer rounded-xl border-t-0 bg-[#282828] p-[10px] pt-0 shadow-xl transition duration-300 hover:bg-[#464646]"
+          className="group relative my-5 max-w-full cursor-pointer rounded-xl border-t-0 bg-[#282828] p-[10px] pt-0 shadow-xl transition duration-300 hover:bg-[--hover-color]"
         >
-          <h3 className="flex items-center bg-[#282828] py-2 transition duration-300 group-hover:bg-[#464646]">
+          <h3 className="flex items-center bg-[#282828] py-2 transition duration-300 group-hover:bg-[--hover-color]">
             <span>{element.logo}</span>
             {element.projectTitle}
           </h3>
