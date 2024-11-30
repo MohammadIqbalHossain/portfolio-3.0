@@ -10,7 +10,7 @@ export default function Home() {
     <main className="my-20 w-full md:w-8/12 lg:my-10 lg:w-6/12">
       <IntroCard />
 
-      {/* about Information   */}
+      {/* detils about Information   */}
       <div className="flex items-start gap-10">
         <div className="hidden h-full w-2/12 lg:block">
           {/* Section title */}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { socialLinkdata } from "@/app/lib/placeholder-data";
 import { Tooltip } from "@/app/ui/tooltip";
 import { Button } from "@/app/ui/button";
-import { CopyToClipboard } from "../copyToClipboard";
+import { CopyToClipboard } from "@/app/components/Home/copyToClipboard";
 import { dmMono } from "@/app/ui/font";
 import { contactSVG } from "@/app/ui/svgs";
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { copiedTickSVG, copySVG } from "../ui/svgs";
+import { copiedTickSVG, copySVG } from "@/app/ui/svgs";
 
 const useCopyToClipboard = () => {
   const [isCopied, setIsCopied] = useState(false);

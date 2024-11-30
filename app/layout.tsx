@@ -1,4 +1,4 @@
-import { Navbar } from "./components/navbar";
+import { Navbar } from "@/app/components/global/navbar";
 import "./globals.css";
 import { inter } from "./ui/font";
 

@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Tooltip } from "../ui/tooltip";
-import { navbarData } from "../lib/placeholder-data";
+import { Tooltip } from "@/app/ui/tooltip";
+import { navbarData } from "@/app/lib/placeholder-data";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
