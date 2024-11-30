@@ -1,3 +1,4 @@
+import { Button } from "@/app/ui/button";
 import { githubSVG } from "@/app/ui/svgs";
 import projectImg_1 from "@/public/project-1.avif";
 import projectImg_2 from "@/public/project-2.avif";
@@ -16,13 +17,13 @@ export function Work() {
       {workSectionData.map((element, index) => (
         <div
           key={index}
-          className="relative max-w-full my-5 border-[10px] border-t-0 border-[#282828] rounded-xl shadow-xl cursor-pointer group"
+          className="group relative my-5 max-w-full cursor-pointer rounded-xl border-t-0 bg-[#282828] p-[10px] pt-0 shadow-xl transition duration-300 hover:bg-[#464646]"
         >
-          <h3 className="bg-[#282828] py-2 flex items-center">
+          <h3 className="flex items-center bg-[#282828] py-2 transition duration-300 group-hover:bg-[#464646]">
             <span>{element.logo}</span>
             {element.projectTitle}
           </h3>
-          <div className="rounded-lg bg-cover bg-no-repeat overflow-hidden ">
+          <div className="overflow-hidden rounded-lg bg-cover bg-no-repeat ">
             <Image
               className="max-w-full transition duration-300 ease-in-out group-hover:scale-110"
               src={element.image}
@@ -31,6 +32,9 @@ export function Work() {
           </div>
         </div>
       ))}
+
+      {/* View all button */}
+      <Button>View all</Button>
     </div>
   );
 }

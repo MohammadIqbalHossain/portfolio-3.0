@@ -18,7 +18,7 @@ export function IntroCard() {
     .toString()
     .padStart(2, "0")}`;
   return (
-    <div className="text-center">
+    <div className="text-center lg:pl-16">
       {/* users current time section */}
       <span
         className={`${dmMono.className} overflow-hidden text-[12px] text-[--avt-text-secondary]`}
@@ -41,8 +41,8 @@ export function IntroCard() {
         <h2 className="text-xl text-[--avt-heading-secondary]">
           Front-end Developer at Nextlent
         </h2>
-        <h4 className="text-md flex items-center text-[--avt-heading-secondary] gap-2">
-          <div className="h-2 w-2 bg-green-600 rounded-full hidden lg:block"></div>{" "}
+        <h4 className="flex items-center gap-2 text-sm text-[--avt-heading-secondary]">
+          <div className="hidden size-2 rounded-full bg-green-600 lg:block"></div>{" "}
           Available for new opportunities
         </h4>
       </div>
@@ -76,7 +76,7 @@ export function IntroCard() {
 
       {/* location section */}
       <p
-        className={`${dmMono.className} overflow-hidden text-[14px] text-[--avt-text-secondary] my-10`}
+        className={`${dmMono.className} my-10 overflow-hidden text-[14px] text-[--avt-text-secondary]`}
       >
         CHT, BAN · 22.7763° N, 91.7910° E
       </p>

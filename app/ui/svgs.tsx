@@ -241,6 +241,7 @@ export const workSVG = (
     <rect
       id="_Transparent_Rectangle_"
       data-name="&lt;Transparent Rectangle&gt;"
+      // eslint-disable-next-line tailwindcss/no-custom-classname
       className="cls-1"
       width={32}
       height={32}
