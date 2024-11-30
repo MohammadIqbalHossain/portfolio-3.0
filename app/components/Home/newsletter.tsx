@@ -18,9 +18,14 @@ export function Newsletter() {
         />
         <button
           type="submit"
-          className="absolute right-2 top-2 flex items-center gap-1 text-[--avt-text-secondary]"
+          className="subscribe-button absolute right-2 top-2"
         >
-          {keyboardEnterSVG} Enter to subscribe
+          <span className="full-text flex items-center gap-1 text-[--avt-text-secondary]">
+            {keyboardEnterSVG} Enter to subscribe
+          </span>
+          <span className="short-text -mt-1 rounded-md bg-[#282828] px-2 py-1 lg:hidden">
+            Subscribe
+          </span>
         </button>
       </form>
 

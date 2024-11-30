@@ -93,3 +93,23 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
+/* Newsletter button styles */
+
+/* Button Text for Larger Screens */
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Hide the full text and show only "Subscribe" for medium devices */
+@media (max-width: 1121px) {
+  .subscribe-button span.full-text {
+    display: none;
+  }
+
+  .subscribe-button span.short-text {
+    display: inline;
+  }
+}
