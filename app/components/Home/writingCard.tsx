@@ -1,4 +1,5 @@
 import { wrtitingData } from "@/app/lib/placeholder-data";
+import { Button } from "@/app/ui/button";
 import { Tag } from "@/app/ui/tag";
 
 export function WritingCard() {
@@ -22,6 +23,8 @@ export function WritingCard() {
           </div>
         </div>
       ))}
+
+      <Button>View all</Button>
     </div>
   );
 }

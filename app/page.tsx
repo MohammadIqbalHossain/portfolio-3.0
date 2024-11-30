@@ -3,6 +3,7 @@ import { IntroCard } from "./components/Home/introCard";
 import { SectionTitle } from "./ui/sectionTitle";
 import { Work } from "./components/Home/work";
 import { WritingCard } from "./components/Home/writingCard";
+import { Newsletter } from "./components/Home/newsletter";
 
 export default function Home() {
   return (
@@ -52,7 +53,16 @@ export default function Home() {
           <SectionTitle>Writing</SectionTitle>
         </div>
         <div className="w-full p-4 text-[15px] lg:p-0">
-          <WritingCard></WritingCard>
+          <WritingCard />
+        </div>
+      </div>
+
+      {/* Newsletter */}
+
+      <div className="mt-10 flex items-start">
+        <div className="mt-3 hidden h-full w-2/12 lg:block"></div>
+        <div className="w-full p-4 text-[15px] lg:p-0">
+          <Newsletter />
         </div>
       </div>
     </main>
