@@ -36,7 +36,7 @@ export interface sidenavStatusProps {
 
 export interface workDataProps {
   slug: string;
-  imgage: string;
+  image: string;
   title: string;
   client: string;
   timeline: string;

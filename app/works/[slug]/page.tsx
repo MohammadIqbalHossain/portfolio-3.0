@@ -1,5 +1,6 @@
 import { Sidebar } from "@/app/components/global/sidebar";
 import { workData } from "@/app/lib/placeholder-data";
+import Image from "next/image";
 
 export default async function ProjectDetails({
   params,
@@ -16,8 +17,36 @@ export default async function ProjectDetails({
       <div className="lg:w-1/4">
         <Sidebar />
       </div>
-      <div className="flex w-screen justify-center lg:w-3/4">
-        {project.slug || project.title}
+      <div className="my-16 flex w-screen flex-col items-center justify-center  lg:w-3/4">
+        <div className="p-5 lg:w-2/4 lg:p-0">
+          <Image
+            className="rounded-lg"
+            src={project.image}
+            width={500}
+            height={500}
+            alt="Project_Img"
+          ></Image>
+          <h1 className="my-5 text-[24px]">{project.title}</h1>
+
+          <div className="flex flex-col gap-y-4">
+            <p>
+              clien: <span>{project.client}</span>
+            </p>
+            <p>
+              Timeline: <span>{project.timeline}</span>
+            </p>
+            <p>
+              Role: <span>{project.role}</span>
+            </p>
+            <p>
+              outcome: <span>{project.outcome}</span>
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <p>{project.details}</p>
+          </div>
+        </div>
       </div>
     </main>
   );

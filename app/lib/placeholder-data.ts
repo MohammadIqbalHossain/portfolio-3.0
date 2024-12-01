@@ -98,8 +98,7 @@ export const wrtitingData: writingDataProps[] = [
 export const workData: workDataProps[] = [
   {
     slug: "1",
-    imgage:
-      "https://framerusercontent.com/images/3QeTdwx0BxlioY8BxgHHdH2wZRw.jpg?scale-down-to=1024",
+    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     title: "New mobile app for Alpha",
     client: "alpha",
     timeline: "Jan 22 – Jul 22",
@@ -112,7 +111,7 @@ export const workData: workDataProps[] = [
   },
   {
     slug: "2",
-    imgage: "",
+    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     client: "alpha",
     title: "Redesigning Gamma",
     timeline: "Jan 22 – Jul 22",
@@ -125,7 +124,7 @@ export const workData: workDataProps[] = [
   },
   {
     slug: "3",
-    imgage: "",
+    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     client: "alpha",
     title: "New mobile app for Alpha",
     timeline: "Jan 22 – Jul 22",
