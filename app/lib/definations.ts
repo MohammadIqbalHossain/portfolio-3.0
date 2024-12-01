@@ -28,3 +28,8 @@ export interface writingDataProps {
   tag?: string;
   blog: string;
 }
+
+export interface sidenavStatusProps {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isOpen: boolean;
+}

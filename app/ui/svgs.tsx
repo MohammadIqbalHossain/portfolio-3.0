@@ -381,3 +381,31 @@ export const keyboardEnterSVG = (
     </g>
   </svg>
 );
+
+export const hamburgerSVG = (
+  <svg
+    className="size-6"
+    fill="#707070"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      fill="#707070"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1}
+      d="M6 18L18 6M6 6l12 12"
+    />
+  </svg>
+);
+
+export const crossSVG = (
+  <svg className="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1}
+      d="M4 6h16M4 12h16m-7 6h7"
+    />
+  </svg>
+);
