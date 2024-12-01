@@ -97,8 +97,36 @@ export const wrtitingData: writingDataProps[] = [
 
 export const WorkData = [
   {
+    slug: "1",
+    imgage: "",
+    title: "New mobile app for Alpha",
+    client: "alpha",
+    timeline: "Jan 22 – Jul 22",
+    role: "Product Designer & User Researcher",
+    tagline: "Translating ecommerce into fully native experiance.",
+    outcome:
+      "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
+    details:
+      "Alpha.com approached me as a product designer to redesign their e-commerce website and translate it into a fully mobile experience. The primary goals of this case study were to discuss my approach to the redesign, the design decisions made, and the outcomes achieved in successfully translating Alpha.com's e-commerce web experience into a fully mobile experience.",
+  },
+  {
+    slug: "2",
     imgage: "",
     client: "alpha",
+    title: "New mobile app for Alpha",
+    timeline: "Jan 22 – Jul 22",
+    role: "Product Designer & User Researcher",
+    tagline: "Translating ecommerce into fully native experiance.",
+    outcome:
+      "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
+    details:
+      "Alpha.com approached me as a product designer to redesign their e-commerce website and translate it into a fully mobile experience. The primary goals of this case study were to discuss my approach to the redesign, the design decisions made, and the outcomes achieved in successfully translating Alpha.com's e-commerce web experience into a fully mobile experience.",
+  },
+  {
+    slug: "3",
+    imgage: "",
+    client: "alpha",
+    title: "New mobile app for Alpha",
     timeline: "Jan 22 – Jul 22",
     role: "Product Designer & User Researcher",
     tagline: "Translating ecommerce into fully native experiance.",

@@ -6,7 +6,6 @@ export default function Works() {
       <div className="lg:w-1/4">
         <Sidebar />
       </div>
-      <div className="flex w-screen justify-center lg:w-3/4">blog</div>
     </main>
   );
 }

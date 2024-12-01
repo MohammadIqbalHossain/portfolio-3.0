@@ -10,7 +10,7 @@ const workSectionData = [
   { projectTitle: "MerchEasy", logo: githubSVG, image: projectImg_2 },
   { projectTitle: "PickTimely", logo: githubSVG, image: projectImg_3 },
 ];
-
+// TODO: Home page work section. I've to redesign it. data loads are should comes from one place. this section may be could become global to use in sidebar.
 export function Work() {
   return (
     <div>
