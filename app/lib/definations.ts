@@ -33,3 +33,15 @@ export interface sidenavStatusProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   isOpen: boolean;
 }
+
+export interface workDataProps {
+  slug: string;
+  imgage: string;
+  title: string;
+  client: string;
+  timeline: string;
+  role: string;
+  tagline: string;
+  outcome: string;
+  details: string;
+}

@@ -1,4 +1,4 @@
-import { iconDataType, writingDataProps } from "./definations";
+import { iconDataType, workDataProps, writingDataProps } from "./definations";
 import {
   aboutSVG,
   contactSVG,
@@ -95,7 +95,7 @@ export const wrtitingData: writingDataProps[] = [
   },
 ];
 
-export const WorkData = [
+export const workData: workDataProps[] = [
   {
     slug: "1",
     imgage: "",

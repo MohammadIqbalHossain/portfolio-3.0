@@ -1,5 +1,5 @@
 import { Sidebar } from "@/app/components/global/sidebar";
-import { WorkData } from "@/app/lib/placeholder-data";
+import { workData } from "@/app/lib/placeholder-data";
 
 export default async function ProjectDetails({
   params,
@@ -7,7 +7,7 @@ export default async function ProjectDetails({
   params: { slug: string };
 }) {
   const { slug } = params;
-  const project = WorkData.find((item) => item.slug === slug);
+  const project = workData.find((item) => item.slug === slug);
 
   if (!project) return <div>Data not found!</div>;
 
@@ -16,7 +16,7 @@ export default async function ProjectDetails({
       <div className="lg:w-1/4">
         <Sidebar />
       </div>
-      <div className="flex w-screen justify-center bg-red-600 lg:w-3/4">
+      <div className="flex w-screen justify-center lg:w-3/4">
         {project.slug || project.title}
       </div>
     </main>
