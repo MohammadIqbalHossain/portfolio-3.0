@@ -19,7 +19,7 @@ export const navbarData: iconDataType[] = [
   {
     content: "work",
     placement: "right",
-    href: "/works",
+    href: "/works/1",
     svg: workSVG,
     count: "2",
   },
@@ -98,7 +98,8 @@ export const wrtitingData: writingDataProps[] = [
 export const workData: workDataProps[] = [
   {
     slug: "1",
-    imgage: "",
+    imgage:
+      "https://framerusercontent.com/images/3QeTdwx0BxlioY8BxgHHdH2wZRw.jpg?scale-down-to=1024",
     title: "New mobile app for Alpha",
     client: "alpha",
     timeline: "Jan 22 – Jul 22",
@@ -113,10 +114,10 @@ export const workData: workDataProps[] = [
     slug: "2",
     imgage: "",
     client: "alpha",
-    title: "New mobile app for Alpha",
+    title: "Redesigning Gamma",
     timeline: "Jan 22 – Jul 22",
     role: "Product Designer & User Researcher",
-    tagline: "Translating ecommerce into fully native experiance.",
+    tagline: "Redesigning Gamma for better rousouces",
     outcome:
       "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
     details:
@@ -128,8 +129,8 @@ export const workData: workDataProps[] = [
     client: "alpha",
     title: "New mobile app for Alpha",
     timeline: "Jan 22 – Jul 22",
-    role: "Product Designer & User Researcher",
-    tagline: "Translating ecommerce into fully native experiance.",
+    role: "Building a design system for Beta",
+    tagline: "Building a design system for Beta fully designed with custom",
     outcome:
       "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
     details:
