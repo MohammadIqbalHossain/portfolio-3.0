@@ -12,12 +12,31 @@ export default async function ProjectDetails({
 
   if (!project) return <div>Data not found!</div>;
 
+  const projectMetadata = [
+    {
+      dataName: "client",
+      metaInfo: project.client,
+    },
+    {
+      dataName: "timeline",
+      metaInfo: project.timeline,
+    },
+    {
+      dataName: "role",
+      metaInfo: project.role,
+    },
+    {
+      dataName: "outcome",
+      metaInfo: project.outcome,
+    },
+  ];
+
   return (
     <main className="w-full lg:flex">
       <div className="lg:w-1/4">
         <Sidebar />
       </div>
-      <div className="my-16 flex w-screen flex-col items-center justify-center  lg:w-3/4">
+      <div className="my-16 flex flex-col items-center justify-center  lg:w-3/4">
         <div className="p-5 lg:w-2/4 lg:p-0">
           <Image
             className="rounded-lg"
@@ -28,19 +47,18 @@ export default async function ProjectDetails({
           ></Image>
           <h1 className="my-5 text-[24px]">{project.title}</h1>
 
-          <div className="flex flex-col gap-y-4">
-            <p>
-              clien: <span>{project.client}</span>
-            </p>
-            <p>
-              Timeline: <span>{project.timeline}</span>
-            </p>
-            <p>
-              Role: <span>{project.role}</span>
-            </p>
-            <p>
-              outcome: <span>{project.outcome}</span>
-            </p>
+          <div className="flex flex-col gap-y-4 ">
+            {projectMetadata.map((element, index) => (
+              <div
+                key={index}
+                className="flex gap-5 text-left capitalize text-[--avt-text-secondary]"
+              >
+                <div className="w-[65px] shrink-0">{element.dataName}: </div>
+                <div>
+                  <span className=" text-white">{element.metaInfo}</span>
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="mt-10">
