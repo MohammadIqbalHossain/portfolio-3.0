@@ -30,13 +30,13 @@ export const navbarData: iconDataType[] = [
     svg: writingSVG,
     count: "3",
   },
-  {
-    content: "store",
-    placement: "right",
-    href: "/store",
-    svg: storeSVG,
-    count: "4",
-  },
+  // {
+  //   content: "store",
+  //   placement: "right",
+  //   href: "/store",
+  //   svg: storeSVG,
+  //   count: "4",
+  // },
   {
     content: "stack",
     placement: "right",

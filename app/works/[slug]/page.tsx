@@ -7,7 +7,7 @@ export default async function ProjectDetails({
 }: {
   params: { slug: string };
 }) {
-  const { slug } = params;
+  const { slug } = await params;
   const project = workData.find((item) => item.slug === slug);
 
   if (!project) return <div>Data not found!</div>;
