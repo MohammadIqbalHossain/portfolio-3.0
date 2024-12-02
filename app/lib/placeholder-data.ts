@@ -26,7 +26,7 @@ export const navbarData: iconDataType[] = [
   {
     content: "writing",
     placement: "right",
-    href: "/writing",
+    href: "/writing/1",
     svg: writingSVG,
     count: "3",
   },
@@ -71,6 +71,8 @@ export const socialLinkdata: iconDataType[] = [
 // Writing sections data.
 export const wrtitingData: writingDataProps[] = [
   {
+    slug: "1",
+    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
     title:
       "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
@@ -79,6 +81,8 @@ export const wrtitingData: writingDataProps[] = [
   },
 
   {
+    slug: "2",
+    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
     title:
       "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
@@ -87,6 +91,8 @@ export const wrtitingData: writingDataProps[] = [
   },
 
   {
+    slug: "3",
+    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
     title:
       "Blockchain and Design: Opportunities and Challenges for Designers in the Crypto Industry",

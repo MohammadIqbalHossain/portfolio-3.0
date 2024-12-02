@@ -23,7 +23,10 @@ export interface iconDataType {
 }
 
 export interface writingDataProps {
-  date: string;
+  slug: string;
+  tagline?: string;
+  image: string;
+  date?: string;
   title: string;
   tag?: string;
   blog: string;
@@ -40,6 +43,7 @@ export interface workDataProps {
   title: string;
   client: string;
   timeline: string;
+  date?: string;
   role: string;
   tagline: string;
   outcome: string;

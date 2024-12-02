@@ -1,20 +1,25 @@
 "use client";
 
-import { workData } from "@/app/lib/placeholder-data";
+import { workData, wrtitingData } from "@/app/lib/placeholder-data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export function SidebarContent() {
   const pathname = usePathname();
   const currentSlug = pathname.split("/").pop();
+
+  // check route to render data conditionally.
   const isWorkRoute = pathname.includes("works");
 
   // Reorder WorkData so the active item comes first
-  const reorderedWorkData = [...workData].sort((a, b) => {
-    if (a.slug === currentSlug) return -1; // Move the active item to the top
-    if (b.slug === currentSlug) return 1;
-    return 0; // Keep other items in their original order
-  });
+  //conditionally load data.
+  const reorderedWorkData = [...(isWorkRoute ? workData : wrtitingData)].sort(
+    (a, b) => {
+      if (a.slug === currentSlug) return -1; // Move the active item to the top
+      if (b.slug === currentSlug) return 1;
+      return 0; // Keep other items in their original order
+    }
+  );
 
   return (
     <div>
@@ -28,7 +33,10 @@ export function SidebarContent() {
           const isActive = currentSlug === element.slug;
 
           return (
-            <Link href={`/works/${element.slug}`} key={index}>
+            <Link
+              href={`/${isWorkRoute ? "works" : "writing"}/${element.slug}`}
+              key={index}
+            >
               {isActive && (
                 <span className="my-[30px] ml-2 text-[15px] text-[--avt-text-secondary]">
                   Now viewing
@@ -42,7 +50,7 @@ export function SidebarContent() {
               >
                 <h2 className="my-2 text-[17px]">{element.title}</h2>
                 <p className="text-[16px] text-[--avt-text-secondary]">
-                  {element.tagline}
+                  {isWorkRoute ? element.tagline : element.date}
                 </p>
               </div>
 
