@@ -4,7 +4,7 @@ import {
   contactSVG,
   homeSVG,
   stackSVG,
-  storeSVG,
+  // storeSVG,
   workSVG,
   writingSVG,
   githubSVG,
