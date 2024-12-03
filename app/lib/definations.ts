@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 export interface ButtonProps
@@ -48,4 +49,20 @@ export interface workDataProps {
   tagline: string;
   outcome: string;
   details: string;
+}
+// Stack sections skills data properties.
+export interface skillsDataProps {
+  slug: string;
+  name: string;
+  href: string;
+  icon: JSX.Element;
+  tag: string;
+}
+//stack physical tools data propertes.
+export interface physicalToolsDataProps {
+  slug: string;
+  name: string;
+  href?: string;
+  tag: string;
+  image: StaticImageData;
 }

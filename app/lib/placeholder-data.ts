@@ -1,4 +1,10 @@
-import { iconDataType, workDataProps, writingDataProps } from "./definations";
+import {
+  iconDataType,
+  physicalToolsDataProps,
+  skillsDataProps,
+  workDataProps,
+  writingDataProps,
+} from "./definations";
 import {
   aboutSVG,
   contactSVG,
@@ -13,6 +19,23 @@ import {
   threadsSVG,
   facebookSVG,
 } from "../ui/svgs";
+
+import {
+  cssSVG,
+  expressjsSVG,
+  gitSVG,
+  javascriptSVG,
+  mongoDBSVG,
+  nextjsSVG,
+  nodejsSVG,
+  reactjsSVG,
+  tailwindcssSVG,
+} from "../ui/svgs";
+
+import monitor from "@/public/monitor.avif";
+import keyboard from "@/public/keyboard.avif";
+import webcam from "@/public/webcam.avif";
+import laptop from "@/public/laptop.png";
 
 export const navbarData: iconDataType[] = [
   { content: "home", placement: "right", href: "/", svg: homeSVG, count: "1" },
@@ -140,5 +163,102 @@ export const workData: workDataProps[] = [
       "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
     details:
       "Alpha.com approached me as a product designer to redesign their e-commerce website and translate it into a fully mobile experience. The primary goals of this case study were to discuss my approach to the redesign, the design decisions made, and the outcomes achieved in successfully translating Alpha.com's e-commerce web experience into a fully mobile experience.",
+  },
+];
+
+export const skillsData: skillsDataProps[] = [
+  {
+    slug: "1",
+    name: "javaScript",
+    href: "https://javascript.info/",
+    icon: javascriptSVG,
+    tag: "P Language",
+  },
+  {
+    slug: "2",
+    name: "tailwindCSS",
+    href: "https://tailwindcss.com/",
+    icon: tailwindcssSVG,
+    tag: "CSS Framework",
+  },
+  {
+    slug: "3",
+    name: "React JS",
+    href: "https://react.dev/",
+    icon: reactjsSVG,
+    tag: "JS Library",
+  },
+  {
+    slug: "4",
+    name: "Node JS",
+    href: "https://nodejs.org/en",
+    icon: nodejsSVG,
+    tag: "JS Runtime",
+  },
+  {
+    slug: "5",
+    name: "Express JS",
+    href: "https://expressjs.com/",
+    icon: expressjsSVG,
+    tag: "Node Framework",
+  },
+  {
+    slug: "6",
+    name: "Next JS",
+    href: "https://nextjs.org/",
+    icon: nextjsSVG,
+    tag: "React Framework",
+  },
+  {
+    slug: "7",
+    name: "MongoDB",
+    href: "https://www.mongodb.com/",
+    icon: mongoDBSVG,
+    tag: "React Framework",
+  },
+  {
+    slug: "8",
+    name: "CSS",
+    href: "https://www.w3.org/Style/CSS/",
+    icon: cssSVG,
+    tag: "Website styles",
+  },
+  {
+    slug: "9",
+    name: "Git",
+    href: "https://git-scm.com/",
+    icon: gitSVG,
+    tag: "Version Control",
+  },
+];
+
+export const physicalToolsData: physicalToolsDataProps[] = [
+  {
+    slug: "1",
+    name: "HP Y21",
+    href: "",
+    tag: "screen",
+    image: monitor,
+  },
+  {
+    slug: "2",
+    name: "Magic keyboard",
+    href: "",
+    tag: "Keyboard",
+    image: keyboard,
+  },
+  {
+    slug: "3",
+    name: "Logitech BRIO",
+    href: "",
+    tag: "Webcam",
+    image: webcam,
+  },
+  {
+    slug: "4",
+    name: "HP Elitebook",
+    href: "",
+    tag: "Laptop",
+    image: laptop,
   },
 ];
