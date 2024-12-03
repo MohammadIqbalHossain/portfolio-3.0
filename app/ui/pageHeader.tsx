@@ -10,7 +10,7 @@ export default function PageHeader({
   className,
 }: pageHeaderProps) {
   return (
-    <div className={`my-8 px-2 ${className}`}>
+    <div className={`my-5 px-2 ${className}`}>
       <h1 className="text-2xl capitalize">{header}</h1>
       <h2 className="text-[20px] text-[--avt-text-secondary]">{tagline}</h2>
     </div>
