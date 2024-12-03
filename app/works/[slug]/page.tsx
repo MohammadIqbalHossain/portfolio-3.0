@@ -1,5 +1,7 @@
 import { Sidebar } from "@/app/components/global/sidebar";
+
 import { workData } from "@/app/lib/placeholder-data";
+import KeyValueCard from "@/app/ui/keyValueCard";
 import Image from "next/image";
 
 export default async function ProjectDetails({
@@ -12,7 +14,12 @@ export default async function ProjectDetails({
 
   if (!project) return <div>Data not found!</div>;
 
-  const projectMetadata = [
+  interface metadataProps {
+    dataName: string;
+    metaInfo: string;
+  }
+
+  const projectMetadata: metadataProps[] = [
     {
       dataName: "client",
       metaInfo: project.client,
@@ -47,19 +54,7 @@ export default async function ProjectDetails({
           ></Image>
           <h1 className="my-5 text-[24px]">{project.title}</h1>
 
-          <div className="flex flex-col gap-y-4 ">
-            {projectMetadata.map((element, index) => (
-              <div
-                key={index}
-                className="flex gap-5 text-left capitalize text-[--avt-text-secondary]"
-              >
-                <div className="w-[65px] shrink-0">{element.dataName}: </div>
-                <div>
-                  <span className=" text-white">{element.metaInfo}</span>
-                </div>
-              </div>
-            ))}
-          </div>
+          <KeyValueCard projectMetadata={projectMetadata} />
 
           <div className="mt-10">
             <p>{project.details}</p>
