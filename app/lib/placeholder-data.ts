@@ -1,7 +1,6 @@
 import {
+  arsenaldataProps,
   iconDataType,
-  physicalToolsDataProps,
-  skillsDataProps,
   workDataProps,
   writingDataProps,
 } from "./definations";
@@ -166,12 +165,13 @@ export const workData: workDataProps[] = [
   },
 ];
 
-export const skillsData: skillsDataProps[] = [
+export const skillsData: arsenaldataProps[] = [
   {
     slug: "1",
     name: "javaScript",
     href: "https://javascript.info/",
     icon: javascriptSVG,
+    image: "",
     tag: "P Language",
   },
   {
@@ -179,6 +179,7 @@ export const skillsData: skillsDataProps[] = [
     name: "tailwindCSS",
     href: "https://tailwindcss.com/",
     icon: tailwindcssSVG,
+    image: "",
     tag: "CSS Framework",
   },
   {
@@ -186,6 +187,7 @@ export const skillsData: skillsDataProps[] = [
     name: "React JS",
     href: "https://react.dev/",
     icon: reactjsSVG,
+    image: "",
     tag: "JS Library",
   },
   {
@@ -193,6 +195,7 @@ export const skillsData: skillsDataProps[] = [
     name: "Node JS",
     href: "https://nodejs.org/en",
     icon: nodejsSVG,
+    image: "",
     tag: "JS Runtime",
   },
   {
@@ -200,6 +203,7 @@ export const skillsData: skillsDataProps[] = [
     name: "Express JS",
     href: "https://expressjs.com/",
     icon: expressjsSVG,
+    image: "",
     tag: "Node Framework",
   },
   {
@@ -207,6 +211,7 @@ export const skillsData: skillsDataProps[] = [
     name: "Next JS",
     href: "https://nextjs.org/",
     icon: nextjsSVG,
+    image: "",
     tag: "React Framework",
   },
   {
@@ -214,6 +219,7 @@ export const skillsData: skillsDataProps[] = [
     name: "MongoDB",
     href: "https://www.mongodb.com/",
     icon: mongoDBSVG,
+    image: "",
     tag: "React Framework",
   },
   {
@@ -221,6 +227,7 @@ export const skillsData: skillsDataProps[] = [
     name: "CSS",
     href: "https://www.w3.org/Style/CSS/",
     icon: cssSVG,
+    image: "",
     tag: "Website styles",
   },
   {
@@ -228,17 +235,19 @@ export const skillsData: skillsDataProps[] = [
     name: "Git",
     href: "https://git-scm.com/",
     icon: gitSVG,
+    image: "",
     tag: "Version Control",
   },
 ];
 
-export const physicalToolsData: physicalToolsDataProps[] = [
+export const physicalToolsData: arsenaldataProps[] = [
   {
     slug: "1",
     name: "HP Y21",
     href: "",
     tag: "screen",
     image: monitor,
+    icon: "",
   },
   {
     slug: "2",
@@ -246,6 +255,7 @@ export const physicalToolsData: physicalToolsDataProps[] = [
     href: "",
     tag: "Keyboard",
     image: keyboard,
+    icon: "",
   },
   {
     slug: "3",
@@ -253,6 +263,7 @@ export const physicalToolsData: physicalToolsDataProps[] = [
     href: "",
     tag: "Webcam",
     image: webcam,
+    icon: "",
   },
   {
     slug: "4",
@@ -260,5 +271,6 @@ export const physicalToolsData: physicalToolsDataProps[] = [
     href: "",
     tag: "Laptop",
     image: laptop,
+    icon: "",
   },
 ];

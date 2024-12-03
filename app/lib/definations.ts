@@ -50,19 +50,21 @@ export interface workDataProps {
   outcome: string;
   details: string;
 }
-// Stack sections skills data properties.
-export interface skillsDataProps {
+// Stack sections data properties.
+export interface arsenaldataProps {
   slug: string;
   name: string;
   href: string;
-  icon: JSX.Element;
+  image: StaticImageData | string;
+  icon: ReactNode;
   tag: string;
 }
+
 //stack physical tools data propertes.
-export interface physicalToolsDataProps {
-  slug: string;
-  name: string;
-  href?: string;
-  tag: string;
-  image: StaticImageData;
-}
+// export interface physicalToolsDataProps {
+//   slug: string;
+//   name: string;
+//   href?: string;
+//   tag: string;
+//   image: StaticImageData;
+// }
