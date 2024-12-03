@@ -1,7 +1,40 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "../ui/button";
 import PageHeader from "../ui/pageHeader";
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, message }),
+      });
+
+      if (response.ok) {
+        setStatus("Email sent successfully!");
+        setEmail("");
+        setMessage("");
+      } else {
+        setStatus("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("An error occurred. Please try again.");
+    }
+  };
+
   return (
     <div className="my-20 p-4 lg:w-5/12 lg:p-0">
       <div className="mb-10">
@@ -22,7 +55,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <form action="">
+      <form action="" onSubmit={handleSubmit}>
         <div className="flex w-full gap-4">
           <input
             className="input-styles w-2/4"
@@ -32,6 +65,8 @@ export default function Contact() {
           <input
             className="input-styles w-2/4"
             type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email "
           />
         </div>
@@ -41,13 +76,18 @@ export default function Contact() {
           className="input-styles w-full"
           color="#6A6A6A"
           placeholder=" Your message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         ></textarea>
 
-        <button type="submit" className="w-full">
-          <Button className="bg-white text-black hover:bg-[#d8d2d2]">
-            Submit
-          </Button>
+        <button
+          type="submit"
+          className="my-2 w-full rounded-lg bg-white px-0 py-2 text-black"
+        >
+          submit
         </button>
+
+        <p>{status}</p>
       </form>
     </div>
   );
