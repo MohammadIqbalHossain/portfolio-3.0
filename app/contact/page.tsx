@@ -1,11 +1,11 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import { Button } from "../ui/button";
 import PageHeader from "../ui/pageHeader";
 import Link from "next/link";
 import { CopyToClipboard } from "../components/Home/copyToClipboard";
-import { calenderSVG, linkedinSVG } from "../ui/svgs";
+import { calenderSVG, clockSVG, linkedinSVG } from "../ui/svgs";
 import Image from "next/image";
 import loadingIMG from "@/public/loading.svg";
 
@@ -113,7 +113,7 @@ export default function Contact() {
         >
           {status === "Sending..." ? (
             <Image
-              className="size-[60px]"
+              className="my-0 h-8 w-full border"
               src={loadingIMG}
               alt="Loading_img"
             ></Image>
@@ -122,8 +122,13 @@ export default function Contact() {
           )}
         </button>
 
+        <p className="flex items-center justify-center gap-1 text-xs text-[--avt-text-secondary]">
+          <span>{clockSVG}</span>
+          Around 1 - 2 hours to respond
+        </p>
+
         <p
-          className={`${
+          className={` text-center text-sm text-black ${
             status === "Email sent successfully!" || "Sending..."
               ? "text-green-500"
               : "text-red-400"
