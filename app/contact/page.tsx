@@ -1,8 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { Button } from "../ui/button";
 import PageHeader from "../ui/pageHeader";
+import Link from "next/link";
+import { CopyToClipboard } from "../components/Home/copyToClipboard";
+import { calenderSVG, linkedinSVG } from "../ui/svgs";
+import Image from "next/image";
+import loadingIMG from "@/public/loading.svg";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -27,6 +32,7 @@ export default function Contact() {
         setStatus("Email sent successfully!");
         setEmail("");
         setMessage("");
+        setName("");
       } else {
         setStatus("Failed to send email. Please try again.");
       }
@@ -50,9 +56,26 @@ export default function Contact() {
         </h4>
 
         <div className="my-5 flex flex-col gap-5 lg:flex-row">
-          <Button>Book call</Button>
-          <Button>Copy email </Button>
-          <Button>DM me</Button>
+          <Button>
+            <Link
+              target="__blank"
+              href={"https://cal.com/iqbal-hossain-7cwwif/15min"}
+            >
+              Book call
+            </Link>
+            <span className="ml-1">{calenderSVG}</span>
+          </Button>
+
+          <Button>
+            <CopyToClipboard />
+          </Button>
+          <Button>
+            <Link target="__blank" href={"https://www.linkedin.com/in/iqbalhs"}>
+              {" "}
+              DM me
+            </Link>
+            <span className="ml-1"> {linkedinSVG}</span>
+          </Button>
         </div>
       </div>
 
@@ -86,9 +109,17 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="my-2 w-full rounded-lg bg-white px-0 py-2 text-black"
+          className="my-2 flex w-full items-center justify-center rounded-lg bg-white px-0 py-2 text-black"
         >
-          submit
+          {status === "Sending..." ? (
+            <Image
+              className="size-[60px]"
+              src={loadingIMG}
+              alt="Loading_img"
+            ></Image>
+          ) : (
+            "Submit"
+          )}
         </button>
 
         <p
