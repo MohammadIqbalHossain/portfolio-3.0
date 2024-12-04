@@ -3,11 +3,11 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const { email, message } = await req.json();
+    const { email, message, name } = await req.json();
 
-    if (!email || !message) {
+    if (!email || !message || !name) {
       return NextResponse.json(
-        { error: "Email and message are required." },
+        { error: "Email, message and name are required." },
         { status: 400 }
       );
     }
@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER,
-      subject: "New Contact Form Submission",
+      subject: `New Contact Form Submission from ${name}`,
       text: message,
     };
 

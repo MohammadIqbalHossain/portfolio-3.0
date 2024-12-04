@@ -7,6 +7,7 @@ import PageHeader from "../ui/pageHeader";
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
   const [status, setStatus] = useState("");
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
@@ -19,7 +20,7 @@ export default function Contact() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, message }),
+        body: JSON.stringify({ email, message, name }),
       });
 
       if (response.ok) {
@@ -61,6 +62,9 @@ export default function Contact() {
             className="input-styles w-2/4"
             type="text"
             placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
           />
           <input
             className="input-styles w-2/4"
@@ -68,16 +72,16 @@ export default function Contact() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Your Email "
+            required
           />
         </div>
         <textarea
           name="textarea"
-          id=""
           className="input-styles w-full"
-          color="#6A6A6A"
-          placeholder=" Your message"
+          placeholder="Your message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          required
         ></textarea>
 
         <button
@@ -87,7 +91,15 @@ export default function Contact() {
           submit
         </button>
 
-        <p>{status}</p>
+        <p
+          className={`${
+            status === "Email sent successfully!" || "Sending..."
+              ? "text-green-500"
+              : "text-red-400"
+          }`}
+        >
+          {status}
+        </p>
       </form>
     </div>
   );
