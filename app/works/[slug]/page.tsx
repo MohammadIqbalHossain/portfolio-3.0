@@ -2,7 +2,12 @@ import { Sidebar } from "@/app/components/global/sidebar";
 
 import { workData } from "@/app/lib/placeholder-data";
 import KeyValueCard from "@/app/ui/keyValueCard";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Work",
+};
 
 export default async function ProjectDetails({
   params,

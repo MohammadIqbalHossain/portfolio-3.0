@@ -4,6 +4,11 @@ import { SectionTitle } from "./ui/sectionTitle";
 import { Work } from "./components/Home/work";
 import { WritingCard } from "./components/Home/writingCard";
 import { Newsletter } from "./components/Home/newsletter";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+};
 
 export default function Home() {
   return (

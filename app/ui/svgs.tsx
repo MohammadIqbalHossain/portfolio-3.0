@@ -666,3 +666,40 @@ export const clockSVG = (
     />
   </svg>
 );
+
+export const loadingSVG = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    preserveAspectRatio="xMidYMid"
+    width={100}
+    height={100}
+    style={{
+      shapeRendering: "auto",
+      display: "block",
+    }}
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+  >
+    <g>
+      <circle
+        strokeDasharray="51.83627878423158 19.27875959474386"
+        r={11}
+        strokeWidth={2}
+        stroke="#fff"
+        fill="none"
+        cy={50}
+        cx={50}
+      >
+        <animateTransform
+          keyTimes="0;1"
+          values="0 50 50;360 50 50"
+          dur="1s"
+          repeatCount="indefinite"
+          type="rotate"
+          attributeName="transform"
+        />
+      </circle>
+      <g />
+    </g>
+  </svg>
+);

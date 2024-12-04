@@ -9,12 +9,20 @@ import { calenderSVG, clockSVG, linkedinSVG } from "../ui/svgs";
 import Image from "next/image";
 import loadingIMG from "@/public/loading.svg";
 
+// import { Metadata } from "next";
+
+// TODO: metadata is not working becaus it's a client component I've do it manually
+// export const metadata: Metadata = {
+//   title: "Contact",
+// };
+
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState("");
 
+  //Handler function for the form submition.
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -50,11 +58,13 @@ export default function Contact() {
           tagline="Let's talk about working together"
           className=""
         />
+        {/* TODO: This opputuniy section could be a reusable component. */}
         <h4 className="flex items-center gap-2 text-sm text-[--avt-heading-secondary]">
           <div className="hidden size-2 rounded-full bg-green-600 lg:block"></div>{" "}
           Available for new opportunities
         </h4>
 
+        {/* Actions buttons in contact page */}
         <div className="my-5 flex flex-col gap-5 lg:flex-row">
           <Button>
             <Link
@@ -69,6 +79,7 @@ export default function Contact() {
           <Button>
             <CopyToClipboard />
           </Button>
+
           <Button>
             <Link target="__blank" href={"https://www.linkedin.com/in/iqbalhs"}>
               {" "}
@@ -79,6 +90,7 @@ export default function Contact() {
         </div>
       </div>
 
+      {/* Contact page form */}
       <form action="" onSubmit={handleSubmit}>
         <div className="flex w-full gap-4">
           <input
@@ -107,6 +119,7 @@ export default function Contact() {
           required
         ></textarea>
 
+        {/* Conditionally redering loading icon in sumnit button */}
         <button
           type="submit"
           className="my-2 flex w-full items-center justify-center rounded-lg bg-white px-0 py-2 text-black"
@@ -122,11 +135,13 @@ export default function Contact() {
           )}
         </button>
 
+        {/* Response confimation section */}
         <p className="flex items-center justify-center gap-1 text-xs text-[--avt-text-secondary]">
           <span>{clockSVG}</span>
           Around 1 - 2 hours to respond
         </p>
 
+        {/* Showing errors and sucess texts */}
         <p
           className={` text-center text-sm text-black ${
             status === "Email sent successfully!" || "Sending..."

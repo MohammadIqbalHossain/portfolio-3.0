@@ -1,7 +1,12 @@
 import { Sidebar } from "@/app/components/global/sidebar";
 import { wrtitingData } from "@/app/lib/placeholder-data";
 import { Tag } from "@/app/ui/tag";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Writing",
+};
 
 export default async function WritingDetails({
   params,

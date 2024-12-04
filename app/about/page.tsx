@@ -3,6 +3,11 @@ import PageHeader from "../ui/pageHeader";
 import { SectionTitle } from "../ui/sectionTitle";
 import aboutIMG from "@/public/about-me.avif";
 import KeyValueCard from "../ui/keyValueCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "about",
+};
 
 const experianceData = [
   {
