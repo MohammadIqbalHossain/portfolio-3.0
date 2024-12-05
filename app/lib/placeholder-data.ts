@@ -17,6 +17,7 @@ import {
   xSVG,
   threadsSVG,
   facebookSVG,
+  linkedinSVG,
 } from "../ui/svgs";
 
 import {
@@ -83,11 +84,42 @@ export const navbarData: iconDataType[] = [
 ];
 
 export const socialLinkdata: iconDataType[] = [
-  { content: "x.com", placement: "bottom", href: "/", svg: xSVG },
-  { content: "Threads", placement: "bottom", href: "/", svg: threadsSVG },
-  { content: "github", placement: "bottom", href: "/", svg: githubSVG },
-  { content: "instagram", placement: "bottom", href: "/", svg: instagramSVG },
-  { content: "facebook", placement: "bottom", href: "/", svg: facebookSVG },
+  {
+    content: "x.com",
+    placement: "bottom",
+    href: "https://x.com/IQBAL96993312",
+    svg: xSVG,
+  },
+  {
+    content: "Threads",
+    placement: "bottom",
+    href: "https://www.threads.net/@_being.iqbal",
+    svg: threadsSVG,
+  },
+  {
+    content: "github",
+    placement: "bottom",
+    href: "https://github.com/MohammadIqbalHossain",
+    svg: githubSVG,
+  },
+  {
+    content: "instagram",
+    placement: "bottom",
+    href: "https://www.instagram.com/_being.iqbal",
+    svg: instagramSVG,
+  },
+  {
+    content: "facebook",
+    placement: "bottom",
+    href: "https://web.facebook.com/iqbal.abdullah.927543/",
+    svg: facebookSVG,
+  },
+  {
+    content: "linkedIn",
+    placement: "bottom",
+    href: "https://www.linkedin.com/in/iqbalhs/",
+    svg: linkedinSVG,
+  },
 ];
 
 // Writing sections data.

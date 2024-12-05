@@ -55,7 +55,9 @@ export function IntroCard() {
             content={elemnet.content}
             placement={elemnet.placement}
           >
-            <Link href={elemnet.href}>{elemnet.svg}</Link>
+            <Link target="__blank" href={elemnet.href}>
+              {elemnet.svg}
+            </Link>
           </Tooltip>
         ))}
       </div>
@@ -66,7 +68,7 @@ export function IntroCard() {
           svg={contactSVG}
           className="gap-2 bg-[--foreground] text-black hover:bg-slate-200"
         >
-          Contact me
+          <Link href={"contact"}>Contact me</Link>
         </Button>
         <p>or</p>
         <Button>

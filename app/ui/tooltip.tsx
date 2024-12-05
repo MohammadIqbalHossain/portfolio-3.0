@@ -1,14 +1,11 @@
 import { TooltipProps } from "../lib/definations";
-import { inter } from "./font";
 
 export function Tooltip({ children, content, placement, count }: TooltipProps) {
   return (
     <div className="center-item relative my-2 list-none">
       <button className="rounded">{children}</button>
       <div
-        className={`${
-          inter.className
-        } c-tooltip center-item z-10 mx-4 rounded-none ${
+        className={`c-tooltip center-item z-10 mx-4 rounded-none ${
           placement === "bottom" && "s-place-bottom"
         } ${placement === "right" && "s-place-right"}`}
       >

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { arrowSvg } from "./ui/svgs";
-
 export default function NotFound() {
   return (
     <div className="flex size-full h-screen flex-col items-center justify-center gap-y-5 text-[--avt-text-secondary]">

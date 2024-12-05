@@ -5,11 +5,6 @@ import workspace from "@/public/workspace.jpg";
 
 import PageHeader from "../ui/pageHeader";
 import Arsenal from "../components/stack/arsenal";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Stack",
-};
 
 export default function Stack() {
   return (

@@ -6,12 +6,12 @@ import PageHeader from "../ui/pageHeader";
 import Link from "next/link";
 import { CopyToClipboard } from "../components/Home/copyToClipboard";
 import { calenderSVG, clockSVG, linkedinSVG } from "../ui/svgs";
+import loadingImg from "@/public/loading.svg";
 import Image from "next/image";
-import loadingIMG from "@/public/loading.svg";
 
+// TODO: I've to add metadata to this page. this not working because it's a client component.
 // import { Metadata } from "next";
 
-// TODO: metadata is not working becaus it's a client component I've do it manually
 // export const metadata: Metadata = {
 //   title: "Contact",
 // };
@@ -21,6 +21,8 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [status, setStatus] = useState("");
+
+  console.log(name, email, message);
 
   //Handler function for the form submition.
   const handleSubmit = async (e: { preventDefault: () => void }) => {
@@ -127,7 +129,7 @@ export default function Contact() {
           {status === "Sending..." ? (
             <Image
               className="my-0 h-8 w-full border"
-              src={loadingIMG}
+              src={loadingImg}
               alt="Loading_img"
             ></Image>
           ) : (
