@@ -1,6 +1,37 @@
+"use client";
+
 import { contactSVG, keyboardEnterSVG } from "@/app/ui/svgs";
+import { useState } from "react";
 
 export function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleSubscribe = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const response = await fetch("api/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setStatus("Thank you for subscribing.");
+        setEmail("");
+      } else {
+        setStatus("Failed to send email. Please try again.");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("An error occurred. Please try again.");
+    }
+  };
+
   return (
     <div className="center-item flex-col gap-y-3 text-center lg:mx-10">
       <span className="my-5 text-2xl">{contactSVG}</span>
@@ -10,9 +41,11 @@ export function Newsletter() {
         studies, essays and products.
       </h3>
 
-      <form className="relative w-full">
+      <form className="relative w-full" onSubmit={handleSubscribe}>
         <input
           className="w-full rounded-lg border border-[#464646] bg-[#1F1F1F] px-3 py-2 text-[--avt-text-secondary] shadow-lg outline-none transition duration-1000 placeholder:text-[#464646] focus:border-[0.5px]"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
           placeholder="name@gamil.com"
         />
@@ -28,9 +61,9 @@ export function Newsletter() {
           </span>
         </button>
       </form>
-
+      <p>{status}</p>
       <p className="text-xs text-[--avt-text-secondary]">
-        Join 1500 + subscribers
+        Be the first one to subscribe.
       </p>
     </div>
   );
