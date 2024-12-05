@@ -28,6 +28,7 @@ export interface iconDataType {
 export interface writingDataProps {
   slug: string;
   tagline?: string;
+  href?: string;
   image: string;
   date?: string;
   title: string;
@@ -70,3 +71,11 @@ export interface arsenaldataProps {
 //   tag: string;
 //   image: StaticImageData;
 // }
+
+// Home page work section data type.
+export interface workSectionDataProps {
+  projectTitle: string;
+  href: string;
+  logo: ReactNode;
+  image: StaticImageData;
+}

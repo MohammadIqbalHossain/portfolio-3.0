@@ -2,6 +2,7 @@ import {
   arsenaldataProps,
   iconDataType,
   workDataProps,
+  workSectionDataProps,
   writingDataProps,
 } from "./definations";
 import {
@@ -31,6 +32,10 @@ import {
   reactjsSVG,
   tailwindcssSVG,
 } from "../ui/svgs";
+
+import projectImg_1 from "@/public/project-1.avif";
+import projectImg_2 from "@/public/project-2.avif";
+import projectImg_3 from "@/public/project-3.avif";
 
 import monitor from "@/public/monitor.avif";
 import keyboard from "@/public/keyboard.avif";
@@ -128,6 +133,7 @@ export const wrtitingData: writingDataProps[] = [
     slug: "1",
     image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
+    href: "/writing/1",
     title:
       "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
     tag: "process",
@@ -138,6 +144,7 @@ export const wrtitingData: writingDataProps[] = [
     slug: "2",
     image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
+    href: "/writing/1",
     title:
       "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
     tag: "crypto",
@@ -148,6 +155,7 @@ export const wrtitingData: writingDataProps[] = [
     slug: "3",
     image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
+    href: "/writing/1",
     title:
       "Blockchain and Design: Opportunities and Challenges for Designers in the Crypto Industry",
     tag: "AI",
@@ -304,5 +312,27 @@ export const physicalToolsData: arsenaldataProps[] = [
     tag: "Laptop",
     image: laptop,
     icon: "",
+  },
+];
+
+// Home page work section data.
+export const workSectionData: workSectionDataProps[] = [
+  {
+    projectTitle: "RocketRock",
+    href: "/works/1",
+    logo: githubSVG,
+    image: projectImg_1,
+  },
+  {
+    projectTitle: "MerchEasy",
+    href: "/works/2",
+    logo: githubSVG,
+    image: projectImg_2,
+  },
+  {
+    projectTitle: "PickTimely",
+    href: "/works/3",
+    logo: githubSVG,
+    image: projectImg_3,
   },
 ];
