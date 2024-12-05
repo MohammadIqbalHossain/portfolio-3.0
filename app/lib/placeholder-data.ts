@@ -19,6 +19,9 @@ import {
   threadsSVG,
   facebookSVG,
   linkedinSVG,
+  boxSVG,
+  hexagonSVG,
+  sunSVG,
 } from "../ui/svgs";
 
 import {
@@ -320,19 +323,19 @@ export const workSectionData: workSectionDataProps[] = [
   {
     projectTitle: "RocketRock",
     href: "/works/1",
-    logo: githubSVG,
+    logo: boxSVG,
     image: projectImg_1,
   },
   {
     projectTitle: "MerchEasy",
     href: "/works/2",
-    logo: githubSVG,
+    logo: hexagonSVG,
     image: projectImg_2,
   },
   {
     projectTitle: "PickTimely",
     href: "/works/3",
-    logo: githubSVG,
+    logo: sunSVG,
     image: projectImg_3,
   },
 ];

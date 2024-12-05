@@ -3,8 +3,11 @@
 import { useState, useEffect } from "react";
 import { SidebarNav } from "./sidebarNav";
 import { SidebarContent } from "./sidebarContent";
+import { usePathname } from "next/navigation";
 
 export function Sidebar() {
+  const pathname = usePathname();
+  const checkPath = pathname.includes("works");
   const [isOpen, setIsOpen] = useState(false);
 
   // Automatically open the sidebar for larger screens
@@ -53,7 +56,7 @@ export function Sidebar() {
         </div>
 
         {/* Button to toggle sidebar */}
-        <SidebarNav setIsOpen={setIsOpen} isOpen={isOpen} />
+        <SidebarNav setIsOpen={setIsOpen} isOpen={isOpen} path={checkPath} />
       </div>
     </>
   );

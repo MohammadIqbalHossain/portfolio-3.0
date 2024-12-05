@@ -39,6 +39,7 @@ export interface writingDataProps {
 export interface sidenavStatusProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   isOpen: boolean;
+  path: boolean;
 }
 
 export interface workDataProps {

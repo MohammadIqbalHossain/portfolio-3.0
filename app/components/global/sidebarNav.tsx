@@ -1,11 +1,11 @@
 import { sidenavStatusProps } from "@/app/lib/definations";
 import { crossSVG, hamburgerSVG } from "@/app/ui/svgs";
 
-export function SidebarNav({ setIsOpen, isOpen }: sidenavStatusProps) {
+export function SidebarNav({ setIsOpen, isOpen, path }: sidenavStatusProps) {
   return (
     <div className="center-item mb-5 w-full  border-b border-[#343434] px-5 py-4 lg:hidden">
       <div>
-        <h2>Work</h2>
+        <h2>{path ? "Work" : "Writings"}</h2>
       </div>
       <div className="ml-auto ">
         <button

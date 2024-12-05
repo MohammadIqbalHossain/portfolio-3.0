@@ -61,7 +61,7 @@ export function Newsletter() {
           </span>
         </button>
       </form>
-      <p>{status}</p>
+      <p className="text-sm text-[--avt-text-secondary]">{status}</p>
       <p className="text-xs text-[--avt-text-secondary]">
         Be the first one to subscribe.
       </p>
