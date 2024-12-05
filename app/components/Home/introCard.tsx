@@ -63,12 +63,15 @@ export function IntroCard() {
       </div>
 
       {/* Contact me buttons and copy email adress button  */}
-      <div className="mx-5 flex flex-wrap items-center justify-center gap-4 md:mx-10 md:flex-nowrap lg:mx-10 lg:flex-nowrap">
+      <div className="mx-5 flex flex-col flex-wrap items-center justify-center gap-4 md:mx-10 md:flex-nowrap lg:mx-10 lg:flex-row lg:flex-nowrap">
         <Button
+          href="contact"
+          introCard={true}
           svg={contactSVG}
           className="gap-2 bg-[--foreground] text-black hover:bg-slate-200"
         >
-          <Link href={"contact"}>Contact me</Link>
+          {/* <Link href={"contact"}>Contact me</Link> */}
+          contact
         </Button>
         <p>or</p>
         <Button>

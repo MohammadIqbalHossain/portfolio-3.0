@@ -24,7 +24,7 @@ export function WritingCard() {
         </div>
       ))}
 
-      <Button>View all</Button>
+      <Button href="/writing/1">View all</Button>
     </div>
   );
 }

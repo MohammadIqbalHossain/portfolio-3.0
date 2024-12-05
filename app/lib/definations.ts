@@ -5,6 +5,8 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   svg?: React.ReactNode;
+  href?: string;
+  introCard?: boolean;
 }
 
 export interface TooltipProps {

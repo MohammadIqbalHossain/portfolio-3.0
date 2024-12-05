@@ -34,7 +34,7 @@ export function Work() {
       ))}
 
       {/* View all button */}
-      <Button>View all</Button>
+      <Button href="/works/1">View all</Button>
     </div>
   );
 }

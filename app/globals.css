@@ -119,3 +119,9 @@ body {
 .input-styles {
   @apply bg-[#343434]  my-2 rounded-lg py-4 px-2 placeholder:text-[#6A6A6A] placeholder:text-sm focus:outline-none shadow-lg;
 }
+
+/* Global button class */
+
+.button-style {
+  @apply center-item button-box-shadow w-full rounded-lg border border-[#464646] bg-[#2E2E2E] p-4 py-2 leading-tight transition-colors hover:bg-[#373737];
+}

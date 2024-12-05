@@ -62,12 +62,12 @@ export default function Contact() {
         />
         {/* TODO: This opputuniy section could be a reusable component. */}
         <h4 className="flex items-center gap-2 text-sm text-[--avt-heading-secondary]">
-          <div className="hidden size-2 rounded-full bg-green-600 lg:block"></div>{" "}
-          Available for new opportunities
+          <div className="size-2 rounded-full bg-green-600 "></div> Available
+          for new opportunities
         </h4>
 
         {/* Actions buttons in contact page */}
-        <div className="my-5 flex flex-col gap-5 lg:flex-row">
+        <div className="my-5 flex flex-col items-center justify-center gap-5  lg:flex-row">
           <Button>
             <Link
               target="__blank"
