@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex items-start gap-10">
         <div className="hidden h-full w-2/12 lg:block">
           {/* Section title */}
-          <SectionTitle>Store</SectionTitle>
+          <SectionTitle>About</SectionTitle>
         </div>
         <div className="gap-y-5 p-4 text-[15px] lg:p-0">
           {/* Section details */}

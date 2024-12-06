@@ -22,12 +22,12 @@ export function SidebarContent() {
   );
 
   return (
-    <div>
+    <section>
       {/* Show title based on the route */}
       <h2 className="my-5 ml-24 hidden capitalize lg:block">
         {isWorkRoute ? "Work" : "Writing"}
       </h2>
-      <div className="mx-4 my-8 flex flex-col items-start lg:ml-20">
+      <div className="mx-4 my-8 flex flex-col items-start overflow-auto lg:ml-20">
         {/* sidebar items here */}
         {reorderedWorkData.map((element, index) => {
           const isActive = currentSlug === element.slug;
@@ -63,6 +63,6 @@ export function SidebarContent() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

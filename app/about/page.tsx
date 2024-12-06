@@ -4,6 +4,7 @@ import { SectionTitle } from "../ui/sectionTitle";
 import aboutIMG from "@/public/about-me.avif";
 import KeyValueCard from "../ui/keyValueCard";
 import { Metadata } from "next";
+import Footer from "../components/global/footer";
 
 export const metadata: Metadata = {
   title: "about",
@@ -29,7 +30,7 @@ const educationData = [
 
 export default function About() {
   return (
-    <div className="my-10  px-0 lg:w-3/6">
+    <section className="my-10  px-0 lg:w-3/6">
       <div>
         <PageHeader
           header={"About"}
@@ -85,6 +86,11 @@ export default function About() {
           <KeyValueCard projectMetadata={educationData} />
         </div>
       </div>
-    </div>
+
+      {/* Footer */}
+      <footer>
+        <Footer />
+      </footer>
+    </section>
   );
 }

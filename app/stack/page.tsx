@@ -5,10 +5,11 @@ import workspace from "@/public/workspace.jpg";
 
 import PageHeader from "../ui/pageHeader";
 import Arsenal from "../components/stack/arsenal";
+import Footer from "../components/global/footer";
 
 export default function Stack() {
   return (
-    <div className="my-10 px-4 lg:w-2/4">
+    <section className="my-10 px-4 lg:w-2/4">
       <PageHeader
         className="lg:ml-24"
         header={"stack"}
@@ -34,6 +35,10 @@ export default function Stack() {
       {/* Physical */}
 
       <Arsenal type={"physical"} />
-    </div>
+
+      <footer>
+        <Footer />
+      </footer>
+    </section>
   );
 }

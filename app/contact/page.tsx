@@ -69,13 +69,8 @@ export default function Contact() {
 
         {/* Actions buttons in contact page */}
         <div className="my-5 flex flex-col items-center justify-center gap-5  lg:flex-row">
-          <Button>
-            <Link
-              target="__blank"
-              href={"https://cal.com/iqbal-hossain-7cwwif/15min"}
-            >
-              Book call
-            </Link>
+          <Button href="https://cal.com/iqbal-hossain-7cwwif/15min">
+            Book call
             <span className="ml-1">{calenderSVG}</span>
           </Button>
 
@@ -83,12 +78,11 @@ export default function Contact() {
             <CopyToClipboard />
           </Button>
 
-          <Button>
-            <Link target="__blank" href={"https://www.linkedin.com/in/iqbalhs"}>
-              {" "}
-              DM me
-            </Link>
-            <span className="ml-1"> {linkedinSVG}</span>
+          <Button
+            href={"https://www.linkedin.com/in/iqbalhs"}
+            svg={linkedinSVG}
+          >
+            Dm me
           </Button>
         </div>
       </div>
