@@ -8,6 +8,7 @@ import { CopyToClipboard } from "../components/Home/copyToClipboard";
 import { calenderSVG, clockSVG, linkedinSVG } from "../ui/svgs";
 import loadingImg from "@/public/loading.svg";
 import Image from "next/image";
+import Footer from "../components/global/footer";
 
 // TODO: I've to add metadata to this page. this not working because it's a client component.
 // import { Metadata } from "next";
@@ -53,7 +54,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="my-20 p-4 lg:w-5/12 lg:p-0">
+    <div className="my-20  p-4 lg:w-5/12 lg:p-0">
       <div className="mb-10">
         <PageHeader
           header="Contact"
@@ -154,6 +155,10 @@ export default function Contact() {
           {status}
         </p>
       </form>
+
+      <footer className="lg:mr-24">
+        <Footer />
+      </footer>
     </div>
   );
 }

@@ -17,7 +17,7 @@ export function Button({
 
   return (
     <div
-      className={`flex w-1/2 flex-col items-center justify-center lg:w-full lg:flex-row`}
+      className={`flex flex-col items-center justify-center lg:w-full lg:flex-row`}
     >
       {href ? (
         <Link className={`${buttonCls}`} href={`${href}`}>

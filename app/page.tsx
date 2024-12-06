@@ -5,6 +5,7 @@ import { Work } from "./components/Home/work";
 import { WritingCard } from "./components/Home/writingCard";
 import { Newsletter } from "./components/Home/newsletter";
 import { Metadata } from "next";
+import Footer from "./components/global/footer";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -70,6 +71,10 @@ export default function Home() {
           <Newsletter />
         </div>
       </div>
+
+      <footer>
+        <Footer />
+      </footer>
     </main>
   );
 }

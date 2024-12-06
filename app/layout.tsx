@@ -19,8 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`center-item ${inter.className} antialiased`}>
+      <body
+        className={`center-item ${inter.className} relative mb-24 min-h-screen antialiased lg:mb-0`}
+      >
         {children}
+
         <Navbar />
       </body>
     </html>
