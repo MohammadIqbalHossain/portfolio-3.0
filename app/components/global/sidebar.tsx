@@ -37,8 +37,7 @@ export function Sidebar() {
     <>
       {isOpen && window.innerWidth < 1024 && (
         <div
-          // eslint-disable-next-line tailwindcss/migration-from-tailwind-2
-          className="fixed inset-0 z-10 bg-black bg-opacity-50"
+          className="fixed inset-0 z-10 bg-black opacity-50"
           onClick={closeSidebar}
         ></div>
       )}

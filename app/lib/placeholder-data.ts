@@ -36,6 +36,8 @@ import {
   tailwindcssSVG,
 } from "../ui/svgs";
 
+import { arcSVG, chatgptSVG, figmaSVG, vsCodeSVG } from "../ui/svgs";
+
 import projectImg_1 from "@/public/project-1.avif";
 import projectImg_2 from "@/public/project-2.avif";
 import projectImg_3 from "@/public/project-3.avif";
@@ -315,6 +317,43 @@ export const physicalToolsData: arsenaldataProps[] = [
     tag: "Laptop",
     image: laptop,
     icon: "",
+  },
+];
+
+// Stack software data.
+
+export const stackSoftwareData: arsenaldataProps[] = [
+  {
+    slug: "1",
+    name: "Arc",
+    href: "https://arc.net/",
+    icon: arcSVG,
+    image: "",
+    tag: "web Browser",
+  },
+  {
+    slug: "2",
+    name: "ChatGPT",
+    href: "https://chatgpt.com/",
+    icon: chatgptSVG,
+    image: "",
+    tag: "Artificial Inteligence",
+  },
+  {
+    slug: "3",
+    name: "Figma",
+    href: "https://www.figma.com/",
+    icon: figmaSVG,
+    image: "",
+    tag: "Design tool",
+  },
+  {
+    slug: "4",
+    name: "VS code",
+    href: "https://www.figma.com/",
+    icon: vsCodeSVG,
+    image: "",
+    tag: "Code IDE",
   },
 ];
 

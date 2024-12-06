@@ -59,7 +59,7 @@ export interface arsenaldataProps {
   slug: string;
   name: string;
   href: string;
-  image: StaticImageData | string;
+  image: StaticImageData | string | null;
   icon: ReactNode;
   tag: string;
 }

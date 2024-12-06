@@ -18,6 +18,9 @@ export default function Stack() {
 
       <Arsenal type={"skills"} />
 
+      {/* Software */}
+      <Arsenal type={"software"} />
+
       {/* workspace section. */}
       <div className="my-10 flex w-full justify-center">
         <div className="mr-2 hidden lg:block">
@@ -33,7 +36,6 @@ export default function Stack() {
       </div>
 
       {/* Physical */}
-
       <Arsenal type={"physical"} />
 
       <footer>

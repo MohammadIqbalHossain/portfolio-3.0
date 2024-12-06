@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import PageHeader from "../ui/pageHeader";
-import Link from "next/link";
+
 import { CopyToClipboard } from "../components/Home/copyToClipboard";
 import { calenderSVG, clockSVG, linkedinSVG } from "../ui/svgs";
 import loadingImg from "@/public/loading.svg";

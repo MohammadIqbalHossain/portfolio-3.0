@@ -1,5 +1,9 @@
 import { arsenaldataProps } from "@/app/lib/definations";
-import { physicalToolsData, skillsData } from "@/app/lib/placeholder-data";
+import {
+  physicalToolsData,
+  skillsData,
+  stackSoftwareData,
+} from "@/app/lib/placeholder-data";
 import { SectionTitle } from "@/app/ui/sectionTitle";
 import { Tag } from "@/app/ui/tag";
 import Image from "next/image";
@@ -15,12 +19,15 @@ export default function Arsenal({ type }: { type: string }) {
     case "physical":
       data = physicalToolsData;
       break;
+    case "software":
+      data = stackSoftwareData;
+      break;
     default:
       console.error("Invalid type provided to Arsenal component");
   }
 
   return (
-    <div className="flex w-full justify-center">
+    <div className="my-10 flex w-full justify-center">
       <div className="mr-10 hidden lg:block">
         <SectionTitle>
           {" "}
@@ -38,12 +45,12 @@ export default function Arsenal({ type }: { type: string }) {
             href={element.href as string}
             className="flex flex-col items-start rounded-xl bg-[#282828] p-2 shadow-md lg:p-5"
           >
-            <div className="w-full">
+            <div className="w-full lg:h-[100px]">
               <div className="flex items-center justify-center ">
-                {type === "skills" ? (
+                {["skills", "software"].includes(type) ? (
                   element.icon
                 ) : (
-                  <Image src={element.image} alt="Icon_img"></Image>
+                  <Image src={element.image as string} alt="Icon_img"></Image>
                 )}
               </div>
             </div>
