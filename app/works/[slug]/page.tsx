@@ -6,6 +6,8 @@ import KeyValueCard from "@/app/ui/keyValueCard";
 import Image from "next/image";
 
 import { Metadata } from "next";
+import { Button } from "@/app/ui/button";
+import { githubSVG, websiteSVG } from "@/app/ui/svgs";
 
 export const metadata: Metadata = {
   title: "Work",
@@ -60,6 +62,18 @@ export default async function ProjectDetails({
             alt="Project_Img"
           ></Image>
           <h1 className="my-5 text-[24px]">{project.title}</h1>
+          <div className="my-5 flex gap-2">
+            <Button
+              href={project.liveView}
+              className="bg-white text-black hover:bg-slate-300"
+              svg={websiteSVG}
+            >
+              Live
+            </Button>
+            <Button href={project.githubLink} svg={githubSVG}>
+              Github
+            </Button>
+          </div>
 
           <KeyValueCard projectMetadata={projectMetadata} />
 

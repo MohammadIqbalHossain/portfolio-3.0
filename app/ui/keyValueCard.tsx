@@ -17,7 +17,9 @@ export default function KeyValueCard({
           key={index}
           className="flex flex-col gap-5 text-left text-[--avt-text-secondary] md:flex-row lg:flex-row"
         >
-          <div className="shrink-0 lg:w-[150px] ">{element.dataName}: </div>
+          <div className="shrink-0 capitalize lg:w-[150px]">
+            {element.dataName}:{" "}
+          </div>
           <div>
             <span className=" text-white">{element.metaInfo}</span>
           </div>

@@ -20,7 +20,7 @@ export function Button({
       className={`flex flex-col items-center justify-center lg:w-full lg:flex-row`}
     >
       {href ? (
-        <Link className={`${buttonCls}`} href={`${href}`}>
+        <Link target="__blank" className={`${buttonCls}`} href={`${href}`}>
           {children}
           {childConditon}
         </Link>

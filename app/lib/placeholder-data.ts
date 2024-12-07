@@ -171,42 +171,51 @@ export const wrtitingData: writingDataProps[] = [
 export const workData: workDataProps[] = [
   {
     slug: "1",
-    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
-    title: "New mobile app for Alpha",
-    client: "alpha",
-    timeline: "Jan 22 – Jul 22",
-    role: "Product Designer & User Researcher",
-    tagline: "Translating ecommerce into fully native experiance.",
+    image: "https://i.ibb.co.com/bd765pJ/pick-timely.jpg",
+    title: "Picktimely",
+
+    client: "A team project for Institution assignment.",
+    timeline: "Jan 22 – Feb 22",
+    role: "Full-stack developer.",
+    tagline: "Scheduling and appointment management solution",
+    githubLink: "https://github.com/endgamers-404-Not-Found/Pick-timely",
+    liveView: "https://pick-timely.web.app/",
     outcome:
-      "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
+      "PickTimely simplifies time management with an intuitive dashboard for scheduling tasks and meetings. Users can choose their preferred platforms like Google Meet or Zoom, making organization effortless and life easier.",
     details:
-      "Alpha.com approached me as a product designer to redesign their e-commerce website and translate it into a fully mobile experience. The primary goals of this case study were to discuss my approach to the redesign, the design decisions made, and the outcomes achieved in successfully translating Alpha.com's e-commerce web experience into a fully mobile experience.",
+      "PickTimely is a scheduling and appointment booking platform designed to help businesses and professionals manage their time more effectively. The website offers a range of features, including calendar integration, automated reminders, and client management tools. With PickTimely, users can easily schedule appointments, set availability, and manage bookings from a single, centralized platform. The intuitive interface and customizable settings make it easy to tailor the platform to individual needs. Whether you are a freelancer, a small business owner, or part of a larger organization, PickTimely provides the tools you need to streamline your scheduling process and improve efficiency. The platform also includes robust reporting and analytics, allowing users to track appointment trends and make data-driven decisions.",
   },
   {
     slug: "2",
-    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
-    client: "alpha",
-    title: "Redesigning Gamma",
-    timeline: "Jan 22 – Jul 22",
-    role: "Product Designer & User Researcher",
-    tagline: "Redesigning Gamma for better rousouces",
+    image: "https://i.ibb.co.com/jhzN36D/merch-easy.jpg",
+    client: "Personal",
+    title: "MarchEasy",
+    timeline: "Mar 22 – Apr 22",
+    githubLink:
+      "https://github.com/MohammadIqbalHossain/warehouse-management-client-site",
+    liveView: "https://warehouse-site.web.app/",
+    role: "Front-end developeor",
+    tagline: "Book warehouse management solution.",
     outcome:
-      "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
+      "MarchEasy simplifies organizing and managing marches and protests with tools for planning, promoting, and tracking event success.",
     details:
-      "Alpha.com approached me as a product designer to redesign their e-commerce website and translate it into a fully mobile experience. The primary goals of this case study were to discuss my approach to the redesign, the design decisions made, and the outcomes achieved in successfully translating Alpha.com's e-commerce web experience into a fully mobile experience.",
+      "MarchEasy is an innovative platform designed to simplify the process of organizing and managing events, marches, and protests. The website offers tools and resources for event coordinators to plan, promote, and execute successful events. Users can create detailed event pages, manage registrations, and communicate with participants through the platform. MarchEasy also provides analytics and reporting features, allowing organizers to track attendance, engagement, and overall event performance. With a focus on social activism, MarchEasy aims to empower communities and advocacy groups by providing a comprehensive solution for event management. The platform's intuitive design and robust functionality make it an essential tool for anyone looking to organize impactful events.",
   },
   {
     slug: "3",
-    image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
-    client: "alpha",
-    title: "New mobile app for Alpha",
-    timeline: "Jan 22 – Jul 22",
-    role: "Building a design system for Beta",
-    tagline: "Building a design system for Beta fully designed with custom",
+    image: "https://i.ibb.co.com/WpR4ckh/rocket-Rock.jpg",
+    client: "Rocket rock",
+    title: "Rocket Rock",
+    timeline: "May 23 – Jul 23",
+    role: "Front-end developer.",
+    tagline: "Solutions of all curosity of spaceships",
+    githubLink:
+      "https://github.com/MohammadIqbalHossain/rocket-rock-client-site",
+    liveView: "https://rocket-rock-cce05.web.app/",
     outcome:
-      "The redesigned Alpha App proved to be highly impactful, particularly on mobile devices, as users exhibited increased shopping activity. Mobile users experienced a remarkable 50% surge in shopping behavior, with a substantial 45% increase in mobile conversions",
+      "Rocket Rock is your go-to site for spacecraft engines and parts, offering a wide range of products, detailed specs, and secure checkout for space enthusiasts and professionals.",
     details:
-      "Alpha.com approached me as a product designer to redesign their e-commerce website and translate it into a fully mobile experience. The primary goals of this case study were to discuss my approach to the redesign, the design decisions made, and the outcomes achieved in successfully translating Alpha.com's e-commerce web experience into a fully mobile experience.",
+      "Rocket Rock is a website for selling spacecraft engines and other parts of spaceships. This site offers a wide range of products for space enthusiasts and professionals alike. From propulsion systems to structural components, Rocket Rock provides everything needed to build or maintain a spacecraft. The website features detailed descriptions and specifications for each product, ensuring that customers can make informed decisions. Additionally, Rocket Rock offers a user-friendly interface, making it easy to navigate and find the required items. With a secure checkout process and reliable shipping options, Rocket Rock aims to be the go-to source for all space-related hardware. The site also includes a blog with the latest news and advancements in space technology, providing valuable insights and updates to its users.",
   },
 ];
 

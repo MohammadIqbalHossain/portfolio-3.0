@@ -53,6 +53,8 @@ export interface workDataProps {
   tagline: string;
   outcome: string;
   details: string;
+  githubLink?: string;
+  liveView?: string;
 }
 // Stack sections data properties.
 export interface arsenaldataProps {
