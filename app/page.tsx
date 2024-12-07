@@ -25,13 +25,15 @@ export default function Home() {
         <div className="gap-y-5 p-4 text-[15px] lg:p-0">
           {/* Section details */}
           <p className="pb-5">
-            I&apos;m Dean Smith, a multidisciplinary designer based in New York
-            City.
+            I&apos;m Iqbal Hossain, a passionate Front-End Developer based in
+            Chattogram, Bangladesh.
           </p>
           <p className="pb-5">
-            With over 15 years of experience in the field, I take pride in
-            delivering visually stunning and user-friendly designs that exceed
-            client expectations.
+            Specializing in cutting-edge technologies like Next.js, Tailwind
+            CSS, and modern design systems, I excel at building sleek,
+            responsive, and user-centric web applications. I thrive on
+            transforming innovative ideas into seamless digital experiences that
+            are both functional and visually compelling.
           </p>
           <p className="pb-5">
             Whether it&apos;s collaborating with cross-functional teams or

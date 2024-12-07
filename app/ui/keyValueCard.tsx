@@ -15,7 +15,7 @@ export default function KeyValueCard({
       {projectMetadata.map((element, index) => (
         <div
           key={index}
-          className="flex flex-col gap-5 text-left capitalize text-[--avt-text-secondary] md:flex-row lg:flex-row"
+          className="flex flex-col gap-5 text-left text-[--avt-text-secondary] md:flex-row lg:flex-row"
         >
           <div className="shrink-0 lg:w-[150px] ">{element.dataName}: </div>
           <div>

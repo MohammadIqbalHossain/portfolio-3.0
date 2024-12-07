@@ -149,7 +149,7 @@ export const wrtitingData: writingDataProps[] = [
     slug: "2",
     image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
-    href: "/writing/1",
+    href: "/writing/2",
     title:
       "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
     tag: "crypto",
@@ -160,7 +160,7 @@ export const wrtitingData: writingDataProps[] = [
     slug: "3",
     image: "https://i.ibb.co.com/DLCGpyR/blog-3.jpg",
     date: "01/01/2000",
-    href: "/writing/1",
+    href: "/writing/3",
     title:
       "Blockchain and Design: Opportunities and Challenges for Designers in the Crypto Industry",
     tag: "AI",

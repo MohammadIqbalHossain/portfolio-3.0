@@ -44,6 +44,7 @@ export function Sidebar() {
 
       <div className="flex">
         {/* Sidebar */}
+
         <div
           className={`fixed z-20 h-screen border-r border-[#343434] bg-[--bg-theme] text-white 
                 transition-all duration-300 
