@@ -6,10 +6,10 @@ export default function Footer() {
   return (
     <footer className="center-item lg:ml-24">
       <div className="center-item mt-20 flex-col justify-center gap-y-3 text-center">
-        <p className="text-sm text-[--avt-text-secondary]">
+        <p className="text-sm text-[--avt-text-secondary] ">
           {" "}
           &#169; {getYear} made by{" "}
-          <Link className="hover:underline" href={""}>
+          <Link className="hover:text-white hover:underline" href={""}>
             @Iqbal
           </Link>
         </p>

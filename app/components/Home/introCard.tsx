@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profileImage from "@/public/profile.jpeg";
+import profileImage from "@/public/in-profile-2.jpg";
 
 import Link from "next/link";
 import { socialLinkdata } from "@/app/lib/placeholder-data";
@@ -29,7 +29,7 @@ export function IntroCard() {
       {/* Profile image */}
       <div className="center-item my-4">
         <Image
-          className="w-[60px] rounded-full"
+          className="w-[80px] rounded-full"
           src={profileImage}
           alt="PROFILE_IMG"
         />
