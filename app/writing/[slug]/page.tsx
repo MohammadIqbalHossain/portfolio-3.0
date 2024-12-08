@@ -3,6 +3,7 @@ import { wrtitingData } from "@/app/lib/placeholder-data";
 import { Tag } from "@/app/ui/tag";
 import { Metadata } from "next";
 import Image from "next/image";
+import Article from "@/app/mdx-page/article.mdx";
 
 export const metadata: Metadata = {
   title: "Writing",
@@ -37,8 +38,9 @@ export default async function WritingDetails({
           </span>
 
           <div className="my-8">
-            <p>{article?.blog}</p>
+            <Article />
           </div>
+          <div></div>
         </div>
       </div>
     </div>

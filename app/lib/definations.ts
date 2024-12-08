@@ -33,7 +33,7 @@ export interface writingDataProps {
   date?: string;
   title: string;
   tag?: string;
-  blog: string;
+  blog?: string;
 }
 
 export interface sidenavStatusProps {
