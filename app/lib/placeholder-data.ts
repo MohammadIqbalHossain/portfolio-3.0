@@ -133,20 +133,21 @@ export const socialLinkdata: iconDataType[] = [
 ];
 
 // Writing sections data.
+
 export const wrtitingData: writingDataProps[] = [
   {
     slug: "1",
-    image: "https://i.ibb.co/DLCGpyR/blog-3.jpg",
+    image: "https://i.ibb.co/MDcwDsF/blockchainavif.jpg",
     date: "01/01/2000",
     href: "/writing/1",
     title:
-      "The Intersection of AI and Design: Creating User-Centric Solutions in the Digital Age Copy",
+      "Designing for the Future: Exploring the Role of AI and Crypto in Product Design",
     tag: "process",
   },
 
   {
     slug: "2",
-    image: "https://i.ibb.co/DLCGpyR/blog-3.jpg",
+    image: "https://i.ibb.co/fnCvhQQ/crypto.jpg",
     date: "01/01/2000",
     href: "/writing/2",
     title:
