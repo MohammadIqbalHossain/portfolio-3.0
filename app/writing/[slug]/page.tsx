@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default async function WritingDetails({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
   const article = wrtitingData.find((item) => item.slug === slug);

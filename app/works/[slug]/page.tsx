@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default async function ProjectDetails({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
   const project = workData.find((item) => item.slug === slug);
