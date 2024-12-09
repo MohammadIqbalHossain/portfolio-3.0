@@ -23,8 +23,6 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [status, setStatus] = useState("");
 
-  console.log(name, email, message);
-
   //Handler function for the form submition.
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
