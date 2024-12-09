@@ -9,13 +9,23 @@ export default function Footer() {
         <p className="text-sm text-[--avt-text-secondary] ">
           {" "}
           &#169; {getYear} made by{" "}
-          <Link className="hover:text-white hover:underline" href={""}>
+          <Link
+            className="hover:text-white hover:underline"
+            href={"https://github.com/MohammadIqbalHossain"}
+          >
             @Iqbal
           </Link>
         </p>
         {/* TODO: Have to add link to github */}
-        <p className="text-sm hover:underline">
-          <Link href={""}>About the design</Link>
+        <p className="text-sm hover:text-[--avt-text-secondary] hover:underline">
+          <Link
+            target="__blank"
+            href={
+              "https://github.com/MohammadIqbalHossain/portfolio-3.0?tab=readme-ov-file#acknowledgements"
+            }
+          >
+            About the design
+          </Link>
         </p>
       </div>
     </footer>
