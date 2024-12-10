@@ -39,7 +39,7 @@ export function IntroCard() {
       <div className="flex flex-col items-center gap-3">
         <h1 className="text-2xl text-[--avt-primary]">Iqbal Hossain</h1>
         <h2 className="text-xl text-[--avt-heading-secondary]">
-          Front-end Developer at Nextlent
+          Front-end Developer at Nexlent
         </h2>
         <h4 className="flex items-center gap-2 text-sm text-[--avt-heading-secondary]">
           <div className="hidden size-2 rounded-full bg-green-600 lg:block"></div>{" "}
