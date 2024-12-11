@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`center-item ${inter.className} relative mb-24 min-h-screen antialiased lg:mb-0 bg-[#232323]`}
+        className={`center-item ${inter.className} relative mb-24 min-h-screen bg-[#232323] text-white antialiased lg:mb-0`}
       >
         {children}
 

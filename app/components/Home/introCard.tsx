@@ -68,9 +68,8 @@ export function IntroCard() {
           href="contact"
           introCard={true}
           svg={contactSVG}
-          className="gap-2 bg-[--foreground] text-black hover:bg-slate-200"
+          className="gap-2 bg-[--foreground] bg-slate-300 text-black hover:bg-slate-200"
         >
-          
           contact
         </Button>
         <p>or</p>
