@@ -70,7 +70,7 @@ export function IntroCard() {
           svg={contactSVG}
           className="gap-2 bg-[--foreground] text-black hover:bg-slate-200"
         >
-          {/* <Link href={"contact"}>Contact me</Link> */}
+          
           contact
         </Button>
         <p>or</p>
